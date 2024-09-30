@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+}
+
+.navLinks {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    height: 2rem;
+    width: 100%;
+}
+
+
+.mainNav li {
+    display: flex;
+    list-style: none;
+    gap: 1.7rem;
+    color: var(--mainColour);
+}
+
+.mainNav li *{
+    align-self: center;
+    text-decoration: none;
+    color: var(--mainColour);
+    text-align: center;
+    font-size: var(--mFontSize);
+    letter-spacing: var(--letterspacerM);
+    font-weight: normal;
+    
+}
+
+.signIn {
+    display: flex;
+    align-self: center;
+    color: var(--mainColour);
+    letter-spacing: var(--letterspacerM);
+    justify-content: flex-end;
+    font-size: var(--mFontSize);
+
+}
+

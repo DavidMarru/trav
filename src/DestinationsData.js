@@ -1,0 +1,83 @@
+const DestinationsData = [
+    {
+        id: 1,
+        name: "ANGKOR WAT SUNRISE",
+        country: "CAMBODIA",
+        region: "Asia",
+        lowestPrice: "$450pps",
+        nights: "N/A",
+        reviews: 120,
+        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+      },
+      {
+        id: 2,
+        name: "KRUGER NATIONAL PARK",
+        country: "SOUTH AFRICA",
+        region: "Africa",
+        lowestPrice: "$500pps",
+        nights: "N/A",
+        reviews: 90,
+        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+      },
+      {
+        id: 3,
+        name: "AMAZON RAINFOREST",
+        country: "BRAZIL",
+        region: "South America",
+        lowestPrice: "$400pps",
+        nights: "N/A",
+        reviews: 200,
+        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+      },
+      {
+        id: 4,
+        name: "KANSAI REGION",
+        country: "JAPAN",
+        region: "Asia",
+        lowestPrice: "$280pps",
+        nights: "N/A",
+        reviews: 200,
+        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+      },
+      {
+        id: 5,
+        name: "Zermatt & Matterhorn",
+        country: "SWITZERLAND",
+        region: "Europe",
+        lowestPrice: "$700pps",
+        nights: "7",
+        reviews: 180,
+        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+      }
+    // {
+    //   id: 0,
+    //   name: "",
+    //   country: "",
+    //   lowestPrice: "$",
+    //   nights: "N/A",
+    //   reviews: 200,
+    //   images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+    // },
+    // {
+    //   id: 0,
+    //   name: "",
+    //   country: "",
+    //   lowestPrice: "$",
+    //   nights: "N/A",
+    //   reviews: 200,
+    //   images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+    // },
+    // {
+    //   id: 0,
+    //   name: "",
+    //   country: "",
+    //   lowestPrice: "$",
+    //   nights: "N/A",
+    //   reviews: 200,
+    //   images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+    // },
+    // // Add more destinations as needed
+  ];
+  
+  export default DestinationsData;
+  

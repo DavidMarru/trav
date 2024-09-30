@@ -1,0 +1,69 @@
+.card {
+    width: 20rem;
+    margin-top: 3rem;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+
+  
+  .destination {
+    font-size: 3.5vw;
+    letter-spacing: var(--letterspacer);
+    margin-bottom: 0.5rem;
+    color: var(--mainColour);
+  }
+  
+  .country {
+    font-size: var(--mFontSizeCountry);
+    color: #000000;
+    margin-bottom: 2rem;
+    color: var(--mainColour);
+    font-weight: normal;
+    letter-spacing: var(--letterspacerM);
+  }
+  
+
+  .details {
+    padding-bottom: 0.25rem;
+    padding-left: 0.3rem;
+    margin-right: 2rem;
+    border-bottom: 2px white solid;
+    border-left: 2px white solid;
+    border-top: none;
+    border-right: none;
+    font-size: var(--mFontSize);
+    background: none;
+    color: var(--mainColour);
+    letter-spacing: var(--letterspacerM);
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+
+  }
+
+  .details:hover {
+    border-bottom: 2px var(--hightColour1) solid;
+    border-left: 2px var(--hightColour1) solid;
+    color: var(--hightColour1);
+
+  }
+
+  .book-now {
+    background-color: #6e7fef8a;
+    color: white;
+    border: none;
+    padding: 0.2rem 0.6rem;
+    font-size: var(--mFontSize);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    letter-spacing: var(--letterspacerM);
+
+  }
+  
+  .book-now:hover {
+    background-color: var(--hightColourButton);
+  }
+  

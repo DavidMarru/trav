@@ -1,0 +1,65 @@
+.stacked-cards-container {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 320px; 
+    height: 500px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+  }
+  
+  .stacked-card {
+    position: absolute;
+    width: 9rem;
+    height: 16rem;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.60);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .middle-card {
+    z-index: 3;
+    transform: translateY(0) scale(1);
+  }
+  
+  .left-card {
+    transform: rotate(-15deg) translateX(-50px);
+    z-index: 2;
+  }
+  
+  .right-card {
+    transform: rotate(15deg) translateX(50px);
+    z-index: 1;
+  }
+  
+  .middle-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+  }
+  
+  .card-info {
+    position: absolute;
+    color: var(--mainColour);
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 0.8rem;
+    border: 0.15rem solid white;
+    padding: 0.4rem;
+    font-size: var(--mFontSize2);
+    letter-spacing: var(--letterspacerM);
+  }
+  
+  .left-card .card-info,
+  .middle-card .card-info {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+  
+  .right-card .card-info {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  
