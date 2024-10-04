@@ -1,12 +1,8 @@
 body {
-  background-color: #d1d1d1;
-  background: linear-gradient(180deg, rgba(2, 2, 2, 0.20) 54%, rgba(104, 104, 104, 0) 100%), 
-  url('./img/Default_Cambodia_Angkor_Wat_Sunrise_2.jpg');
   height: 100vh;
   width: 100vw;
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
   overflow-x:hidden;
   overflow-y: hidden;
 
@@ -17,6 +13,14 @@ body * {
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
+}
+
+.BackgroudImg {
+  position: absolute;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .wrapper {

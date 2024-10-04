@@ -1,3 +1,9 @@
+import Img1 from './img/Default_Cambodia_Angkor_Wat_Sunrise_2.jpg'
+import Img2 from './img/Default_JAPAN_Kansai_Region_ 1.jpg'
+import Img3 from './img/Default_Kruger_National_Park_landscape_0.jpg'
+import Img4 from './img/Default_brazil_inside_amazon_Rainforest_3.jpg'
+import video1 from './videos/Untitleddesign.mp4'
+
 const DestinationsData = [
     {
         id: 1,
@@ -7,7 +13,8 @@ const DestinationsData = [
         lowestPrice: "$450pps",
         nights: "N/A",
         reviews: 120,
-        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+        images: [Img1],
+        video:[] ,
       },
       {
         id: 2,
@@ -17,7 +24,7 @@ const DestinationsData = [
         lowestPrice: "$500pps",
         nights: "N/A",
         reviews: 90,
-        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+        images: [Img3],
       },
       {
         id: 3,
@@ -27,7 +34,7 @@ const DestinationsData = [
         lowestPrice: "$400pps",
         nights: "N/A",
         reviews: 200,
-        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+        images: [Img4],
       },
       {
         id: 4,
@@ -37,7 +44,7 @@ const DestinationsData = [
         lowestPrice: "$280pps",
         nights: "N/A",
         reviews: 200,
-        images: ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+        images: [Img2],
       },
       {
         id: 5,
