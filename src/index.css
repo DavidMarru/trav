@@ -13,6 +13,25 @@ body * {
   font-weight: normal;
 }
 
+.Tittle{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.TittleBox {
+  align-items: center;
+  background-color: #0000002b;
+  border: 2px solid;
+  border-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  gap: 48px;
+  padding: 0px 50px;
+  width:fit-content;
+}
+
 .HomeBody {
   overflow-x:hidden;
   overflow-y: hidden;

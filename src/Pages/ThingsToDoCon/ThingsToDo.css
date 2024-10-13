@@ -1,399 +1,75 @@
 .ThingsToDoBody {
+    position: relative;
     background-color: #303030;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    z-index: 6;
 }
 
-.THINGS-TO-DO-PAGE .overlap-wrapper {
-    background-color: #303030;
-    height: 2420px;
-    overflow: hidden;
-    width: 1441px;
-}
-
-.THINGS-TO-DO-PAGE .overlap-2 {
-    height: 2487px;
-    position: relative;
-}
-
-.THINGS-TO-DO-PAGE .footer-instance {
-    background-color: transparent !important;
-    border-bottom-style: none !important;
-    border-left-style: none !important;
-    border-right-style: none !important;
-    left: 0 !important;
-    position: absolute !important;
-    top: 2041px !important;
-}
-
-.THINGS-TO-DO-PAGE .footer-2 {
-    font-size: 15px !important;
-    letter-spacing: 1.8px !important;
-}
-
-.THINGS-TO-DO-PAGE .hero {
-    height: 2487px;
-    left: 0;
-    position: absolute;
+.ThingsToDo-Background {
+    position: fixed;
     top: 0;
-    width: 1441px;
+    z-index: -5 ;
 }
 
-.THINGS-TO-DO-PAGE .overlap-3 {
-    height: 2000px;
-    position: relative;
-    top: -1px;
-}
-
-.THINGS-TO-DO-PAGE .overlap-group-wrapper {
-    height: 2000px;
-    left: 0;
+.overLayer {
+    background-color: rgba(0, 0, 0, 0.597);
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    top: 0;
-    width: 1441px;
-}
+    z-index: -3;
 
-.THINGS-TO-DO-PAGE .overlap-4 {
-    height: 2041px;
-    position: relative;
-    top: 1px;
 }
-
-.THINGS-TO-DO-PAGE .pexels-pixabay {
-    height: 970px;
-    left: 0;
-    object-fit: cover;
+.ThingsBackground {
     position: absolute;
-    top: 0;
-    width: 1441px;
+    width: 100vw;
+    z-index: -4;
+    filter: blur(3px);
 }
 
-.THINGS-TO-DO-PAGE .BACKGRAND {
-    height: 836px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1441px;
-}
-
-.THINGS-TO-DO-PAGE .frame-8 {
-    background-color: #0000002b;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-color: #ffffff;
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-radius: 5px;
-    border-right-style: solid;
-    border-right-width: 2px;
-    height: 1693px;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 348px;
-    width: 1441px;
-}
-
-.THINGS-TO-DO-PAGE .frame-9 {
-    border-color: #ffffff;
-    border-radius: 0px 5px 5px 5px;
-    border-top-style: solid;
-    border-top-width: 2px;
-    height: 80px;
-    left: 1193px;
-    position: absolute;
-    top: 0;
-    width: 248px;
-}
-
-.THINGS-TO-DO-PAGE .frame-10 {
-    border-color: #ffffff;
-    border-radius: 5px 0px 5px 5px;
-    border-top-style: solid;
-    border-top-width: 2px;
-    height: 80px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 248px;
-}
-
-.THINGS-TO-DO-PAGE .SURJECTIONS {
-    align-items: center;
-    background-color: #0000002b;
-    border: 2px solid;
-    border-color: #ffffff;
-    border-radius: 5px;
-    display: flex;
-    gap: 48px;
-    justify-content: space-around;
-    left: 248px;
-    overflow: hidden;
-    padding: 0px 50px;
-    position: absolute;
-    top: 293px;
-    width: 945px;
-}
-
-.THINGS-TO-DO-PAGE .frame-12 {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
-    justify-content: space-between;
-    position: relative;
-}
-
-.THINGS-TO-DO-PAGE .honey-moon {
-    align-items: center;
+.THINGS-TO-DO-PAGE{
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    height: 102px;
-    padding: 10px 0px;
-    position: relative;
-    width: 54px;
+    gap: 5rem;
 }
 
-.THINGS-TO-DO-PAGE .img-2 {
-    height: 35px;
-    position: relative;
-    width: 35px;
-}
-
-.THINGS-TO-DO-PAGE .honey-moon-2 {
-    align-self: stretch;
-    color: #ffffff;
-    font-family: "Outfit-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    height: 29px;
-    letter-spacing: 1.8px;
-    line-height: normal;
-    position: relative;
-    text-align: center;
-}
-
-.THINGS-TO-DO-PAGE .div-2 {
-    align-items: center;
-    align-self: stretch;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px 0px;
+.ThingsToDoCards {
     position: relative;
 }
 
-.THINGS-TO-DO-PAGE .text-wrapper-17 {
-    color: #ffffff;
-    font-family: "Outfit-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    height: 13px;
-    letter-spacing: 1.8px;
-    line-height: normal;
-    text-align: center;
-    white-space: nowrap;
-    width: 61px;
-}
-
-.THINGS-TO-DO-PAGE .exploring {
-    align-items: center;
-    align-self: stretch;
+.ThingsToDoCards-topbox {
+    position: relative;
+    top: 4rem;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px 0px;
-    position: relative;
-    width: 87px;
+    flex-direction: row;
 }
 
-.THINGS-TO-DO-PAGE .text-wrapper-18 {
-    color: #ffffff;
-    font-family: "Outfit-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    height: 13px;
-    letter-spacing: 1.8px;
-    line-height: normal;
-    text-align: center;
-    white-space: nowrap;
-    width: 83px;
-}
-
-.THINGS-TO-DO-PAGE .wildlife-observation {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px 0px;
-    position: relative;
-    width: 64px;
-}
-
-.THINGS-TO-DO-PAGE .all-day-partying {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px 0px;
-    position: relative;
-    width: 75px;
-}
-
-.THINGS-TO-DO-PAGE .party {
-    color: #ffffff;
-    font-family: "Outfit-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    height: 29px;
-    letter-spacing: 1.8px;
-    line-height: normal;
-    text-align: center;
-    width: 73px;
-}
-
-.THINGS-TO-DO-PAGE .relaxing {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    height: 90px;
-    padding: 10px 0px;
-    position: relative;
-    width: 76px;
-}
-
-.THINGS-TO-DO-PAGE .party-2 {
-    color: #ffffff;
-    font-family: "Outfit-Regular", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    height: 29px;
-    letter-spacing: 1.8px;
-    line-height: normal;
-    text-align: center;
-    width: 73px;
-}
-
-.THINGS-TO-DO-PAGE .THINGS-TO-DO {
-    height: 1382px;
-    left: 66px;
-    position: absolute;
-    top: 465px;
-    width: 1309px;
-}
-
-.THINGS-TO-DO-PAGE .things-to-do-card {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    left: 1px;
-    position: absolute;
-    top: 1086px;
-    width: 1308px;
-}
-
-.THINGS-TO-DO-PAGE .things-to-do-cards-instance {
-    height: 418px !important;
-    position: relative !important;
-}
-
-.THINGS-TO-DO-PAGE .things-to-do-cards-1 {
-    background-color: #02020294 !important;
-}
-
-.THINGS-TO-DO-PAGE .reveiw-block-2 {
-    height: 410px;
-    position: relative;
-    width: 414px;
-}
-
-.THINGS-TO-DO-PAGE .review {
-    background-color: #02020294 !important;
-}
-
-.THINGS-TO-DO-PAGE .reveiw-block {
-    height: 410px;
-    position: relative;
-    width: 414px;
-}
-
-.THINGS-TO-DO-PAGE .top-heading {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    height: 189px;
-    left: 0;
-    padding: 0px 156px;
-    position: absolute;
-    top: 164px;
-    width: 1441px;
-}
-
-.THINGS-TO-DO-PAGE .text-wrapper-19 {
-    color: #ffffff;
-    font-family: "DM Serif Display";
-    font-size: 100px;
-    font-weight: 400;
-    letter-spacing: 0.35px;
-    line-height: 99px;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.THINGS-TO-DO-PAGE .top-heading p {
-    color: #ffffff;
-    font-family: "Outfit";
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 1.8px;
-    line-height: 22px;
-    text-align: center;
-}
-
-.frame {
+.ThingsToDoCards-contain {
     justify-content: center;
-    background-color: #0000002b;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-color: #ffffff;
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-radius: 5px;
-    border-right-style: solid;
-    border-right-width: 2px;
+    border-bottom: 0.15rem solid #ffffff;
+    border-left: 0.15rem solid #ffffff;
+    border-right: 0.15rem solid #ffffff;
+    border-radius: 0.15rem;
     height: 1693px;
-    position: relative;
-    top: 70px;
+    padding:8rem 0 0 5rem ;
+
 }
 
-.frame .div {
-    border-color: #ffffff;
-    border-radius: 0px 5px 5px 5px;
-    border-top-style: solid;
-    border-top-width: 2px;
-    height: 80px;
-    left: 1062px;
-    position: absolute;
-    top: 0;
-    width: 124px;
+.ThingsToDoLine1 {
+    align-self: center;
+    border-radius: 5rem 0px 0px 0px;
+    border-top: 0.15rem solid #ffffff;
+    flex: 1;
+    width: 100%;
 }
 
-.frame .div-2 {
-    border-color: #ffffff;
-    border-radius: 5px 0px 5px 5px;
-    border-top-style: solid;
-    border-top-width: 2px;
-    height: 80px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 248px;
+.ThingsToDoLine2 {
+    align-self: center;
+    border-radius: 0rem 5rem 0px 0px;
+    border-top: 0.15rem solid #ffffff;
+    flex: 1;
+    width: 100%;
 }

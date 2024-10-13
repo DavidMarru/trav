@@ -1,0 +1,125 @@
+.things-to-do-cards {
+    border: 0.15rem solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 4px 17px 25px #00000073;
+    height: 416px;
+    overflow: hidden;
+    width: 924px;
+}
+
+.things-to-do-cards .overlap-group {
+    height: 487px;
+    position: relative;
+    top: -13px;
+    width: 925px;
+}
+
+
+.cardBackG {
+    
+}
+
+.things-to-do-cards .frame {
+    height: 487px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 925px;
+}
+
+.things-to-do-cards .div {
+    background-color: #02020261;
+    height: 487px;
+}
+
+.things-to-do-cards .location-img {
+    box-shadow: 0px 10px 10px #000000a8;
+    height: 236px;
+    left: 31px;
+    position: absolute;
+    top: 104px;
+    width: 420px;
+}
+
+.things-to-do-cards .default-kruger {
+    height: 234px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 420px;
+}
+
+.things-to-do-cards .location-text {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 236px;
+    justify-content: center;
+    left: 478px;
+    padding: 10px;
+    position: absolute;
+    top: 104px;
+    width: 420px;
+}
+
+.things-to-do-cards .text-wrapper {
+    color: #ffffff;
+    font-family: "Outfit-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    line-height: normal;
+    position: relative;
+}
+
+.things-to-do-cards .full-button-instance {
+    background-color: unset !important;
+    border: 0.15rem solid #ffffff;
+    height: 26px !important;
+    width: 267px !important;
+}
+
+.things-to-do-cards .design-component-instance-node {
+    left: 65px !important;
+    text-align: center !important;
+    top: 1px !important;
+}
+
+.things-to-do-cards .location {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 37px;
+    left: 21px;
+    padding: 1px 17px;
+    position: absolute;
+    top: 62px;
+    width: 267px;
+    gap: 0.25rem;
+}
+
+.things-to-do-cards .text-wrapper-2 {
+    align-self: stretch;
+    color: #ffffff;
+    font-family: "Outfit-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2.25px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}
+
+.things-to-do-cards .text-wrapper-3 {
+    align-self: stretch;
+    color: #e3e3e3;
+    font-family: "Outfit-Regular", Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: normal;
+    position: relative;
+}

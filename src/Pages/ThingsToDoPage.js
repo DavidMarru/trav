@@ -14,18 +14,23 @@ import relaxing from "../img/sunbathe.png";
 import rhinoceros from "../img/rhinoceros.png";
 import scubaDiving from "../img/scuba-diving.png";
 import "./ThingsToDoCon/ThingsToDo.css";
+import Tittle from '../Tittle';
 
 function ThingsToDoPage() {
     return (
     <div className="ThingsToDoBody">
-        <div className="wrapper">
-        <div className="THINGS-TO-DO-PAGE">
+        <div className="ThingsToDo-Background">
+            <div className="overLayer"></div>
+            <img className="ThingsBackground" src={BACKGRAND} alt="pixabay" />
+        </div>
+            <div className="THINGS-TO-DO-PAGE">
             <Header />
+            <Tittle
+                TittleName={'THINGS TO DO'}
+            />
             <ThingsToDoCardsWrapper/>
             
             <Footer />
-        </div>
-
         </div>
     </div>
     );

@@ -1,0 +1,28 @@
+.full-button {
+    border-radius: 5px;
+    position: relative;
+    width: 12rem;
+    border: 0.15rem solid #ffffff93;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;align-content: center;text-align: center;
+    transition: 0.3s all ease-in-out;
+}
+
+.full-button .text-wrapper-B {
+    color: #ffffff93;
+    font-family: "Outfit-Regular", Helvetica;
+    font-size: var(--mFontSize);
+    letter-spacing: var(--letterspacerM);
+    transition: 0.3s all ease-in-out;
+
+}
+
+
+.full-button:hover {
+    border-color: #ffffff;
+}
+
+.full-button:hover .text-wrapper-B {
+    color: #ffffff;
+}

@@ -11,33 +11,33 @@ function Surjections () {
     return (
         <div className="surjections">
             <div className="surjections-icons">
-                <div className="honey-moon">
+                <div className="surjections-box">
                     <img className="img" alt="Honey moon" src={honeyMoon} />
                     <div className="text-wrapper">HONEY MOON</div>
                 </div>
-                <div className="div">
+                <div className="surjections-box">
                     <img className="img" alt="Hiking" src={hiking} />
-                    <div className="text-wrapper-2">HIKKING</div>
+                    <div className="text-wrapper">HIKKING</div>
                 </div>
-                <div className="div">
+                <div className="surjections-box">
                     <img className="img" alt="Capping" src={capping} />
-                    <div className="text-wrapper-2">Capping</div>
+                    <div className="text-wrapper">Capping</div>
                 </div>
-                <div className="exploring">
+                <div className="surjections-box">
                     <img className="img" alt="Scuba diving" src={scubaDiving} />
-                    <div className="text-wrapper-3">EXPLORING</div>
+                    <div className="text-wrapper">EXPLORING</div>
                 </div>
-                <div className="wildlife-observation">
+                <div className="surjections-box">
                     <img className="img" alt="Rhinoceros" src={rhinoceros} />
-                    <div className="text-wrapper-2">HIKKING</div>
+                    <div className="text-wrapper">HIKKING</div>
                 </div>
-                <div className="all-day-partying">
+                <div className="surjections-box">
                     <img className="img" alt="Party" src={party} />
-                    <div className="party">ALL DAY PARTYING</div>
+                    <div className="text-wrapper">ALL DAY PARTYING</div>
                 </div>
-                <div className="relaxing">
+                <div className="surjections-box">
                     <img className="img" alt="Relaxing" src={relaxing} />
-                    <div className="party-2">RELAXING</div>
+                    <div className="text-wrapper">RELAXING</div>
                 </div>
             </div>
         </div>
