@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import HeardLine from './img/heart-svgrepo-com (1).svg';
-import HeardFull from './img/heart-svgrepo-com (2).svg'; 
+import HeardLine from '../../img/heart-svgrepo-com (1).svg';
+import HeardFull from '../../img/heart-svgrepo-com (2).svg'; 
 
 function LikeButton() {
   const [toggleLike, setToggleLike] = useState(false); 

@@ -1,10 +1,10 @@
 import React from 'react';
 import './DestinationDetails.css';
-import Img1 from './img/Kruger-imgs/Default_Kruger_National_Park_natives_humans_1.jpg';
-import Img2 from './img/Kruger-imgs/Default_Kruger_National_Park_landscape_2.jpg';
-import Img3 from './img/Kruger-imgs/Default_Kruger_National_Park_landscape_3.jpg';
-import star from './img/star-svgrepo-com.svg';
-import LikeButton from "./LikeButton";
+import Img1 from '../../img/Kruger-imgs/Default_Kruger_National_Park_natives_humans_1.jpg';
+import Img2 from '../../img/Kruger-imgs/Default_Kruger_National_Park_landscape_2.jpg';
+import Img3 from '../../img/Kruger-imgs/Default_Kruger_National_Park_landscape_3.jpg';
+import star from '../../img/star-svgrepo-com.svg';
+import LikeButton from "../HomeCon/LikeButton";
 
 const DestinationDetails = ({ name, country, lowestPrice, nights, reviews }) => {
   return (

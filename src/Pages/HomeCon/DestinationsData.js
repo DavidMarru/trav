@@ -1,8 +1,7 @@
-import Img1 from './img/Default_Cambodia_Angkor_Wat_Sunrise_2.jpg'
-import Img2 from './img/Default_JAPAN_Kansai_Region_ 1.jpg'
-import Img3 from './img/Default_Kruger_National_Park_landscape_0.jpg'
-import Img4 from './img/Default_brazil_inside_amazon_Rainforest_3.jpg'
-import video1 from './videos/Untitleddesign.mp4'
+import Img1 from '../../img/Default_Cambodia_Angkor_Wat_Sunrise_2.jpg'
+import Img2 from '../../img/Default_JAPAN_Kansai_Region_ 1.jpg'
+import Img3 from '../../img/Default_Kruger_National_Park_landscape_0.jpg'
+import Img4 from '../../img/Default_brazil_inside_amazon_Rainforest_3.jpg'
 
 const DestinationsData = [
     {

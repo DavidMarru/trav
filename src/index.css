@@ -4,8 +4,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x:hidden;
-  overflow-y: hidden;
-
 }
 
 body * {
@@ -15,12 +13,23 @@ body * {
   font-weight: normal;
 }
 
-.BackgroudImg {
+.HomeBody {
+  overflow-x:hidden;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.ThingsToDoBody {
+  background-color: #0000002;
+}
+
+.BackgroudImg img{
   position: absolute;
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  width: 100vw;
 }
 
 .wrapper {

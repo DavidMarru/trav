@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './index.css';
-import LocationCards from './LocationCards';
+import '../index.css';
+import LocationCards from './HomeCon/LocationCards';
 import Header from './Header';
-import MoreDestinotions from './moreDestinotions';
-import DestinationDetails from './DestinationDetails';
-import StackedCards from "./StackedCards";
-import destinationsData from './DestinationsData';
+import MoreDestinotions from './HomeCon/moreDestinotions';
+import DestinationDetails from './HomeCon/DestinationDetails';
+import StackedCards from "./HomeCon/StackedCards";
+import destinationsData from './HomeCon/DestinationsData';
 
 function Home() {
     const [selectedDestination, setSelectedDestination] = useState(null);
@@ -45,11 +45,11 @@ function Home() {
     };
 
     return (
-        <div>
+        <div className='HomeBody'>
             <div className='BackgroudImg'>
                 {/* Render default destination images if they exist */}
                 {defaultDestinationData && defaultDestinationData.images && (
-                    <div>
+                    <div className='BackgroudImg'>
                         {defaultDestinationData.images.map((image, index) => (
                             <img key={index} src={image} alt={defaultDestinationData.name} />
                         ))}
@@ -57,7 +57,7 @@ function Home() {
                 )}
                 {/* Conditionally render images for the current destination */}
                 {currentDestination && currentDestination.images && (
-                    <div>
+                    <div className='BackgroudImg'>
                         {currentDestination.images.map((image, index) => (
                             <img key={index} src={image} alt={currentDestination.name} />
                         ))}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import rightArrow from './img/right-arrow-svgrepo-com.png';
-import rightArrow2 from './img/right-arrow-svgrepo-comy.png';
+import rightArrow from '../../img/right-arrow-svgrepo-com.png';
+import rightArrow2 from '../../img/right-arrow-svgrepo-comy.png';
 import DestinationList from './DestinationList';
 
 const countryDefaultDestinations = {
