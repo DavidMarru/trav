@@ -1,5 +1,6 @@
 import Surjections from './Surjections'
 import ThingsToDoCardLeft from "./ThingsToDoCardsLeft";
+import SmallReview from "./SmallReview";
 
 function ThingsToDoCardsWrapper () {
     return (
@@ -10,7 +11,15 @@ function ThingsToDoCardsWrapper () {
             <div className="ThingsToDoLine2" />
         </div>
             <div className="ThingsToDoCards-contain">
-                <ThingsToDoCardLeft />
+                <div className='ToDoImg'>
+                <ThingsToDoCardLeft 
+                    className='Left'/>
+                <div className="ToDoReview">
+                <SmallReview />
+                <SmallReview />
+                <SmallReview />
+                </div>
+                </div>
             </div>
     </div>
     );

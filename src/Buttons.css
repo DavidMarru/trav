@@ -3,6 +3,7 @@
     position: relative;
     width: 12rem;
     border: 0.15rem solid #ffffff93;
+    margin-left: auto;
     padding: 0.25rem;
     display: flex;
     justify-content: center;align-content: center;text-align: center;

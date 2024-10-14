@@ -48,14 +48,24 @@
 }
 
 .ThingsToDoCards-contain {
-    justify-content: center;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
     border-bottom: 0.15rem solid #ffffff;
     border-left: 0.15rem solid #ffffff;
     border-right: 0.15rem solid #ffffff;
     border-radius: 0.15rem;
-    height: 1693px;
-    padding:8rem 0 0 5rem ;
+    padding:8rem 5rem ;
 
+}
+
+.ToDoReview {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    width: 20rem;
 }
 
 .ThingsToDoLine1 {
@@ -72,4 +82,9 @@
     border-top: 0.15rem solid #ffffff;
     flex: 1;
     width: 100%;
+}
+
+.ToDoImg {
+    display: flex;
+    gap: 20px;
 }

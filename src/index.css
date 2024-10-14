@@ -13,11 +13,17 @@ body * {
   font-weight: normal;
 }
 
+.M5Rem {
+  margin-bottom: 5rem;
+}
+
 .Tittle{
   display: flex;
   justify-content: center;
   align-content: center;
   width: 100%;
+  color: white;
+  letter-spacing: var(--letterspacerM);
 }
 
 .TittleBox {
@@ -53,6 +59,10 @@ body * {
 
 .wrapper {
   padding-inline: 7rem;
+  height: 100%;
+}
+.wrapper2 {
+  padding-inline: 4rem;
   height: 100%;
 }
 

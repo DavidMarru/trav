@@ -23,14 +23,20 @@ function ThingsToDoPage() {
             <div className="overLayer"></div>
             <img className="ThingsBackground" src={BACKGRAND} alt="pixabay" />
         </div>
-            <div className="THINGS-TO-DO-PAGE">
+        <div className="wrapper">
+            <div className='M5Rem'>
             <Header />
+            </div>
+        </div>
+        <div className="wrapper2">
+            <div className="THINGS-TO-DO-PAGE">
             <Tittle
                 TittleName={'THINGS TO DO'}
             />
             <ThingsToDoCardsWrapper/>
             
             <Footer />
+        </div>
         </div>
     </div>
     );
