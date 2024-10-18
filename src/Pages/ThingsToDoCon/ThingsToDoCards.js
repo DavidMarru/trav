@@ -1,14 +1,23 @@
-// src/ThingsToDoCon/components/ThingsToDoCards.js
+import ThingsToDoCardLeft from "./ThingsToDoCardsContain";
+import SmallReview from "./SmallReview";
+import "./ThingsCard.css";
 
-import React from 'react';
-import './ThingsToDo.css'; // Assuming you'll style this separately
 
-export const ThingsToDoCards = ({ className, defaultKruger, frameClassName }) => {
-    return (
-        <div className={`things-to-do-cards ${className}`}>
-            <div className={`frame ${frameClassName}`}>
-                <img src={defaultKruger} alt="Things to do" className="things-to-do-img" />
-            </div>
+function ToDoCards ({Row}) {
+return (
+    <div>
+    <div className='ToDoImg'>
         </div>
-    );
+    <div className={`ToDO-Row ${Row}`}>
+    <ThingsToDoCardLeft />      
+    <div className="ToDoReview">
+    <SmallReview />
+    <SmallReview />
+    <SmallReview />
+    </div>
+    </div>
+</div>
+);
 };
+
+export default ToDoCards

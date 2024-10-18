@@ -6,7 +6,7 @@
     border-radius: 5px;
     box-shadow: 4px 17px 25px #00000073;
     height: 28rem;
-    width: 80%;
+    width: 70%;
     overflow: hidden;
 }
 
@@ -21,8 +21,18 @@
 }
 
 .ToDoImgLeft {
-    display: flex;
     z-index: -6;
+}
+
+.ToDO-Row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.ToDO-Row.Right {
+ flex-direction: row-reverse;   
 }
 
 .ToDoBg-Img-cont {
@@ -49,6 +59,7 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
+    width: 50%;
 }
 
 .default-kruger {
@@ -63,6 +74,7 @@
     gap: 10px;
     justify-content: center;
     padding: 1rem;
+    width: 50%;
 }
 
 .text-wrapper {

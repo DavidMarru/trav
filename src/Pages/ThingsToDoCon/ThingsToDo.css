@@ -1,3 +1,8 @@
+.ToDO-Footer {
+    margin-top: 5rem;
+}
+
+
 .ThingsToDoBody {
     position: relative;
     background-color: #303030;
@@ -49,13 +54,15 @@
 
 .ThingsToDoCards-contain {
     display: flex;
+    flex-direction: column;
+    gap: 7rem;
     align-content: center;
     justify-content: space-between;
     border-bottom: 0.15rem solid #ffffff;
     border-left: 0.15rem solid #ffffff;
     border-right: 0.15rem solid #ffffff;
     border-radius: 0.15rem;
-    padding:8rem 5rem ;
+    padding:8rem 2.5rem ;
 
 }
 

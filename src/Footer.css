@@ -1,13 +1,17 @@
 .footer {
     align-items: center;
+    background-color: #313131;
     border-color: #ffffff;
     border-top-style: solid;
-    border-top-width: 2px;
+    border-top-width: 0.15rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
     position: relative;
-    width: 1441px;
+}
+
+.ToDOFooter {
+    margin-top: 5rem;
 }
 
 .footer .footer-upper {

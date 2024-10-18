@@ -16,6 +16,7 @@ import scubaDiving from "../img/scuba-diving.png";
 import "./ThingsToDoCon/ThingsToDo.css";
 import Tittle from '../Tittle';
 
+
 function ThingsToDoPage() {
     return (
     <div className="ThingsToDoBody">
@@ -33,11 +34,15 @@ function ThingsToDoPage() {
             <Tittle
                 TittleName={'THINGS TO DO'}
             />
-            <ThingsToDoCardsWrapper/>
-            
+            <ThingsToDoCardsWrapper
+            Row="left"
+            />            
+        </div>
+        </div>
+        <div className="ToDO-Footer">
             <Footer />
         </div>
-        </div>
+
     </div>
     );
 }
