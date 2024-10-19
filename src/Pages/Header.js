@@ -14,7 +14,7 @@ function Header() {
                         <p>|</p>
                         <Link to="/travel">TRAVEL</Link>
                         <p>|</p>
-                        <Link to="/holidayrentals">HOLIDAY RENTALS</Link>
+                        <Link to="/HolidayRentals">HOLIDAY RENTALS</Link>
                         <p>|</p>
                         <Link to="/aboutus">ABOUT US</Link>
                     </li>

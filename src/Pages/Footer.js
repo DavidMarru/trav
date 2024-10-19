@@ -1,6 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import '../Footer.css'
+import tikTok from '../img/brand-tiktok-sq-svgrepo-com.svg';
+import facebook from '../img/facebook-svgrepo-com.svg';
+import instagramCircle from '../img/instagram-with-circle-svgrepo-com.svg';
+import twitterCircled from '../img/twitter-round-svgrepo-com.svg';
 function Footer({
     divClassName,
     divClassNameOverride,
@@ -12,10 +16,6 @@ function Footer({
     divClassName6,
     divClassName7,
     divClassName8,
-    tikTok,
-    facebook,
-    instagramCircle,
-    twitterCircled,
 }) {
     return (
         <div className="footer">

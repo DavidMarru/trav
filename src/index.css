@@ -13,6 +13,13 @@ body * {
   font-weight: normal;
 }
 
+.Page-Spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;  margin-bottom: 5rem;
+
+}
+
 .M5Rem {
   margin-bottom: 5rem;
 }

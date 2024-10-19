@@ -9,6 +9,12 @@ const countryDefaultDestinations = {
     'Brazil': 'AMAZON RAINFOREST',
     'Japan': 'KANSAI REGION',
     'Switzerland': 'Zermatt & Matterhorn',
+    'France': 'Eiffel Tower',
+    'Australia': 'SYDNEY HARBOUR BRIDGE',
+    'USA': 'GRAND CANYON',
+    'Greece': 'Santorini',
+    'Seychelles': 'SEYCHELLES',
+    'Italy': 'COLOSSEUM',
     // Add other countries and their default destinations
 };
 

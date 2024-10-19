@@ -1,0 +1,12 @@
+.HolidayRentailsBody {
+        position: relative;
+        background-color: #303030;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+}
+
+.HolidayRentals-Tittle {
+    margin-bottom: 5rem;
+}
