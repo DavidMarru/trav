@@ -12,8 +12,6 @@ function Header() {
                         <p>|</p>
                         <Link to="/ThingsToDoPage">THINGS TO DO</Link>
                         <p>|</p>
-                        <Link to="/travel">TRAVEL</Link>
-                        <p>|</p>
                         <Link to="/HolidayRentals">HOLIDAY RENTALS</Link>
                         <p>|</p>
                         <Link to="/aboutus">ABOUT US</Link>

@@ -6,10 +6,18 @@ import Tittle from '../Tittle';
 import Footer from "../Pages/Footer"; 
 import Pixabay from '../img/pexels-pixabay-86703.jpg';
 import DestinationsData from './HomeCon/DestinationsData'; 
+import "./ThingsToDoCon/ThingsToDo.css";
+import BACKGRAND from "../img/pexels-pixabay-86703.jpg"; // Updated path for background image
+
 
 function HolidayRentals() {
     return (
         <div className="HolidayRentailsBody">
+            <div className="ThingsToDo-Background">
+                <div className="overLayer"></div>
+                <img className="ThingsBackground" src={BACKGRAND} alt="pixabay" />
+            </div>
+
             <div className="wrapper">
                 <div className='M5Rem'>
                     <Header />
@@ -21,7 +29,6 @@ function HolidayRentals() {
 
             <div className={styles.summery}>
                 <div className={styles.bg}>
-                    <img className={styles.pexelsPixabay867031Icon} alt="" src={Pixabay} />
                     <div className={styles.backgrand} />
                 </div>
                 <div className={styles.loremIpsumDolorSitAmetConWrapper}>

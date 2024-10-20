@@ -28,6 +28,8 @@
     list-style: none;
     gap: 1.7rem;
     color: var(--mainColour);
+    flex-direction: row;
+
 }
 
 .mainNav li *{
@@ -50,4 +52,3 @@
     font-size: var(--mFontSize);
 
 }
-

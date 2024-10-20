@@ -8,8 +8,13 @@ const countryDefaultDestinations = {
     'Cambodia': 'ANGKOR WAT SUNRISE',
     'Brazil': 'AMAZON RAINFOREST',
     'Japan': 'KANSAI REGION',
-    'Switzerland': 'Zermatt & Matterhorn',
-    // Add other region and their default destinations
+    'France': 'EIFFEL TOWER',
+    'Australia': 'SYDNEY HARBOUR BRIDGE',
+    'USA': 'GRAND CANYON',
+    'Greece': 'SANTORINI',
+    'Seychelles': 'BEACHES OF SEYCHELLES',
+    'Italy': 'COLOSSEUM',
+    'Switzerland': 'ZERMATT & MATTERHORN',
 };
 
 const countryDestinations = {

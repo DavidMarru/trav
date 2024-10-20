@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x:hidden;
+  background-color: #000000;
+
 }
 
 body * {
@@ -11,6 +13,7 @@ body * {
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
+
 }
 
 .Page-Spacing {
@@ -45,23 +48,54 @@ body * {
   width:fit-content;
 }
 
+.home-FT {
+  margin-top: 12vh;
+}
+
 .HomeBody {
+  position: relative;
   overflow-x:hidden;
   overflow-y: hidden;
-  height: 100vh;
 }
 
 .ThingsToDoBody {
   background-color: #00000042;
 }
 
-.BackgroudImg img{
+.box {
+  z-index: 5;
+}
+
+.HomeBG-overlayer {
   position: absolute;
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  width: 100vw;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  z-index: -1; /* Ensure it sits above the background image */
+}
+
+.BackgroudImg {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.BackgroudImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -5; /* Ensure image sits behind content */
+}
+.box {
+  position: relative;
+  z-index: 5;
 }
 
 .wrapper {
@@ -75,7 +109,9 @@ body * {
 
 .locationScreen {
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  height: 35rem;
+  width: 100%;
   
 }
 
@@ -85,6 +121,9 @@ body * {
   height: 4rem;
   cursor: pointer;
   z-index: 5;
+  position: absolute;
+  top: 40%;
+  right: 0;
 }
 
 .moreButton {

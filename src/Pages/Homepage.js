@@ -6,7 +6,8 @@ import MoreDestinotions from './HomeCon/moreDestinotions';
 import DestinationDetails from './HomeCon/DestinationDetails';
 import StackedCards from "./HomeCon/StackedCards";
 import destinationsData from './HomeCon/DestinationsData';
-import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
+import { motion, AnimatePresence } from 'framer-motion';
+import Footer from "../Pages/Footer"; 
 
 function Home() {
     const [selectedDestination, setSelectedDestination] = useState(null);
@@ -54,6 +55,7 @@ function Home() {
 
     return (
         <div className='HomeBody'>
+            <div className="HomeBG-overlayer" > </div>
             <div className='BackgroudImg'>
                 {/* Render default destination images with motion effects only on changes */}
                 <AnimatePresence>
@@ -61,10 +63,10 @@ function Home() {
                         <motion.div
                             className='BackgroudImg'
                             key={defaultDestinationData.name} // Unique key to trigger re-mount
-                            initial={{ opacity: 0, y: -20 }} // Starting state
-                            animate={{ opacity: 1, y: 0 }} // Animate to this state
-                            exit={{ opacity: 0, y: -20 }} // Exit animation
-                            transition={{ duration: 0.3 }} // Transition duration
+                            initial={{ opacity: 0, x: -20 }} // Starting state
+                            animate={{ opacity: 1, x: 0 }} // Animate to this state
+                            exit={{ opacity: 1, x: -20 }} // Exit animation
+                            transition={{ duration: 0.5 }} // Transition duration
                         >
                             {defaultDestinationData.images.map((image, index) => (
                                 <img key={index} src={image} alt={defaultDestinationData.name} />
@@ -79,9 +81,9 @@ function Home() {
                         {currentDestination.images.map((image, index) => (
                             <img key={index} src={image} alt={currentDestination.name} />
                         ))}
-                    </div>
+                </div>
                 )}
-            </div>
+                </div>
             <div className='box'>
                 <div className="wrapper">
                     <StackedCards />
@@ -98,10 +100,10 @@ function Home() {
                             {defaultDestinationData && (
                                 <motion.div
                                     key={defaultDestinationData.name} // Key to re-mount on changes
-                                    initial={{ opacity: 0, y: 20 }} // Start from below
-                                    animate={{ opacity: 1, y: 0 }} // Fade in and slide up
-                                    exit={{ opacity: 0, y: 20 }} // Fade out and slide down
-                                    transition={{ duration: 0.3 }} // Transition duration
+                                    initial={{ opacity: 0, x: 20 }} // Start from below
+                                    animate={{ opacity: 1, x: 0 }} // Fade in and slide up
+                                    exit={{ opacity: 0, x: -20 }} // Fade out and slide down
+                                    transition={{ duration: 0.5 }} // Transition duration
                                 >
                                     <LocationCards
                                         destination={defaultDestinationData.name}
@@ -132,6 +134,9 @@ function Home() {
                         )}
                     </div>
                 </div>
+            </div>
+            <div className="home-FT">
+            <Footer />
             </div>
         </div>
     );

@@ -5,6 +5,10 @@ import tikTok from '../img/brand-tiktok-sq-svgrepo-com.svg';
 import facebook from '../img/facebook-svgrepo-com.svg';
 import instagramCircle from '../img/instagram-with-circle-svgrepo-com.svg';
 import twitterCircled from '../img/twitter-round-svgrepo-com.svg';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './Header.css';
+
+
 function Footer({
     divClassName,
     divClassNameOverride,
@@ -24,12 +28,13 @@ function Footer({
                     <div className="WebsiteName">
                         <div className="text-wrapper">WORLD NAVIGATION</div>
                     </div>
-                    <div className="div">
-                        <div className={`text-wrapper-2 ${divClassName}`}>HOME</div>
-                        <div className={`text-wrapper-3 ${divClassNameOverride}`}>THINGS TO DO</div>
-                        <div className={`text-wrapper-4 ${divClassName1}`}>TRAVEL</div>
-                        <div className={`text-wrapper-5 ${divClassName2}`}>HOLIDAY RENTALS</div>
-                        <div className={`text-wrapper-6 ${divClassName3}`}>ABOUT US</div>
+                    <div className="FTnav">
+                    <li>
+                        <Link to="/">HOME</Link>
+                        <Link to="/ThingsToDoPage">THINGS TO DO</Link>
+                        <Link to="/HolidayRentals">HOLIDAY RENTALS</Link>
+                        <Link to="/aboutus">ABOUT US</Link>
+                    </li>
                     </div>
                     <div className="add-on-links">
                         <div className={`text-wrapper-7 ${divClassName4}`}>BLOG</div>

@@ -30,7 +30,7 @@
   .backDrop.active {
     animation: opacityUp 0.35s ease-in-out;
     opacity: 1;
-
+    z-index: 6;
 
   }
   
