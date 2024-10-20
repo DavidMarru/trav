@@ -52,7 +52,7 @@ body * {
 }
 
 .ThingsToDoBody {
-  background-color: #0000002;
+  background-color: #00000042;
 }
 
 .BackgroudImg img{
@@ -76,6 +76,7 @@ body * {
 .locationScreen {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .mbuttonA {
@@ -83,6 +84,7 @@ body * {
   align-self: center;
   height: 4rem;
   cursor: pointer;
+  z-index: 5;
 }
 
 .moreButton {
@@ -152,7 +154,7 @@ body * {
   transition: opacity 0.35s ease-in-out, visibility 0s 0.5s;
 }
 
-.countries {
+.region {
   display: none;
   margin: 0.5rem;
   align-content: flex-start;
@@ -160,7 +162,7 @@ body * {
   transition: visibility 0s 0.5s, opacity 0.5s ease-in-out;
 }
 
-.mbuttonA.mClicked .countries, .mbuttonA.CountryClicked .countries {
+.mbuttonA.mClicked .region, .mbuttonA.CountryClicked .region {
   display: flex;
   justify-content: center;
   visibility: visible;
@@ -169,11 +171,11 @@ body * {
   gap: 2rem;
 }
 
-.mbuttonA.CountryClicked .countries *{
+.mbuttonA.CountryClicked .region *{
   visibility: visible;
 }
 
-.mbuttonA.mClicked .countries p:hover, .mbuttonA.CountryClicked .countries p:hover, .mbuttonA.CountryClicked .destinations li:hover{
+.mbuttonA.mClicked .region p:hover, .mbuttonA.CountryClicked .region p:hover, .mbuttonA.CountryClicked .destinations li:hover{
   color: var(--hightColour1);
   cursor: pointer;
 }
@@ -192,7 +194,7 @@ body * {
   cursor: default;
 }
 
-.mbuttonA.mClicked .countries *{
+.mbuttonA.mClicked .region *{
 visibility: visible;
 }
 .mbuttonA.CountryClicked .moreButton {
@@ -213,10 +215,10 @@ visibility: visible;
   color: white;
 }
 
-.countries *{
+.region *{
   visibility: hidden;
 }
-.countries p {
+.region p {
   cursor: pointer;
   transition: all 0.3s ease;
 }

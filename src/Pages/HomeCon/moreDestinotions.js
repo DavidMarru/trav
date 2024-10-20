@@ -9,13 +9,7 @@ const countryDefaultDestinations = {
     'Brazil': 'AMAZON RAINFOREST',
     'Japan': 'KANSAI REGION',
     'Switzerland': 'Zermatt & Matterhorn',
-    'France': 'Eiffel Tower',
-    'Australia': 'SYDNEY HARBOUR BRIDGE',
-    'USA': 'GRAND CANYON',
-    'Greece': 'Santorini',
-    'Seychelles': 'SEYCHELLES',
-    'Italy': 'COLOSSEUM',
-    // Add other countries and their default destinations
+    // Add other region and their default destinations
 };
 
 const countryDestinations = {
@@ -63,7 +57,7 @@ function MoreDestinotions({ onDestinationChange }) {
         >
             <div className="moreButton" onClick={handleClick}>
                 <h3 className="moreDestinotions">MORE<br />DESTINOTIONS</h3>
-                <div className="countries">
+                <div className="region">
                     <p className={`Africa ${selectedRegion === 'Africa' ? 'CountryClicked' : ''}`} onClick={() => handleRegionClicked('Africa')}>Africa</p>
                     <p className={`Asia ${selectedRegion === 'Asia' ? 'CountryClicked' : ''}`} onClick={() => handleRegionClicked('Asia')}>Asia</p>
                     <p className={`AustraliaOceania ${selectedRegion === 'AustraliaOceania' ? 'CountryClicked' : ''}`} onClick={() => handleRegionClicked('AustraliaOceania')}>Australia/Oceania</p>

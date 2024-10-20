@@ -6,12 +6,14 @@ import MoreDestinotions from './HomeCon/moreDestinotions';
 import DestinationDetails from './HomeCon/DestinationDetails';
 import StackedCards from "./HomeCon/StackedCards";
 import destinationsData from './HomeCon/DestinationsData';
+import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 
 function Home() {
     const [selectedDestination, setSelectedDestination] = useState(null);
     const [defaultDestination, setDefaultDestination] = useState("ANGKOR WAT SUNRISE");
     const [isActive, setIsActive] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
+    const [isChanged, setIsChanged] = useState(false); // Track if destination has changed
 
     const handleBookNow = (destination) => {
         console.log(`Book Now for: ${destination}`);
@@ -41,20 +43,36 @@ function Home() {
 
     const handleDefaultChange = (newDestination) => {
         setDefaultDestination(newDestination);
+        setIsChanged(true); // Mark that a change has occurred
         console.log('setDefaultDestination:', newDestination);
+
+        // Reset the change state after a delay to allow animation
+        setTimeout(() => {
+            setIsChanged(false);
+        }, 300); // Match with animation duration
     };
 
     return (
         <div className='HomeBody'>
             <div className='BackgroudImg'>
-                {/* Render default destination images if they exist */}
-                {defaultDestinationData && defaultDestinationData.images && (
-                    <div className='BackgroudImg'>
-                        {defaultDestinationData.images.map((image, index) => (
-                            <img key={index} src={image} alt={defaultDestinationData.name} />
-                        ))}
-                    </div>
-                )}
+                {/* Render default destination images with motion effects only on changes */}
+                <AnimatePresence>
+                    {defaultDestinationData && defaultDestinationData.images && (
+                        <motion.div
+                            className='BackgroudImg'
+                            key={defaultDestinationData.name} // Unique key to trigger re-mount
+                            initial={{ opacity: 0, y: -20 }} // Starting state
+                            animate={{ opacity: 1, y: 0 }} // Animate to this state
+                            exit={{ opacity: 0, y: -20 }} // Exit animation
+                            transition={{ duration: 0.3 }} // Transition duration
+                        >
+                            {defaultDestinationData.images.map((image, index) => (
+                                <img key={index} src={image} alt={defaultDestinationData.name} />
+                            ))}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
                 {/* Conditionally render images for the current destination */}
                 {currentDestination && currentDestination.images && (
                     <div className='BackgroudImg'>
@@ -75,15 +93,25 @@ function Home() {
 
                     <Header />
                     <div className="locationScreen">
-                        {/* Dynamic Default Destination */}
-                        {defaultDestinationData && (
-                            <LocationCards
-                                destination={defaultDestinationData.name}
-                                country={defaultDestinationData.country}
-                                details={() => handleDetails(defaultDestinationData.name)}
-                                onBookNow={() => handleBookNow(defaultDestinationData.name)}
-                            />
-                        )}
+                        <AnimatePresence>
+                            {/* Dynamic Default Destination with Motion */}
+                            {defaultDestinationData && (
+                                <motion.div
+                                    key={defaultDestinationData.name} // Key to re-mount on changes
+                                    initial={{ opacity: 0, y: 20 }} // Start from below
+                                    animate={{ opacity: 1, y: 0 }} // Fade in and slide up
+                                    exit={{ opacity: 0, y: 20 }} // Fade out and slide down
+                                    transition={{ duration: 0.3 }} // Transition duration
+                                >
+                                    <LocationCards
+                                        destination={defaultDestinationData.name}
+                                        country={defaultDestinationData.country}
+                                        details={() => handleDetails(defaultDestinationData.name)}
+                                        onBookNow={() => handleBookNow(defaultDestinationData.name)}
+                                    />
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
 
                         <MoreDestinotions onDestinationChange={handleDefaultChange} />
                     </div>

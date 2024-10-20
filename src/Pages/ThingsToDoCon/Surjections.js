@@ -1,3 +1,4 @@
+import React from 'react';
 import capping from "../../img/tent-in-the-forest.png"; 
 import hiking from "../../img/trekking.png"; 
 import honeyMoon from "../../img/ballroom-dance.png"; 

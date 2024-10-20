@@ -1,3 +1,5 @@
+import React from 'react';
+
 import BACKGRAND from "../img/pexels-pixabay-86703.jpg"; // Updated path for background image
 import Footer from "../Pages/Footer"; // Assuming Footer is in a parent directory
 import ThingsToDoCardsWrapper from "./ThingsToDoCon/ThingsToDoCardsWrapper"; // Assuming ThingsToDoCardsWrapper is in a parent directory
