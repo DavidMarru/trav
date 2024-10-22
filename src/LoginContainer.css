@@ -1,0 +1,232 @@
+.login1 {
+    position: absolute;
+    top: calc(50% - 10.5px);
+    left: calc(50% - 26.5px);
+    letter-spacing: 0.15em;
+}
+.login {
+    position: absolute;
+    top: calc(50% + 177.5px);
+    left: calc(50% - 210.5px);
+    border-radius: 15px;
+    background-color: #fff;
+    width: 421px;
+    height: 55px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 17px;
+    color: #000;
+}
+.emailImport {
+    width: 401px;
+    position: relative;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.emailImportWrapper {
+    position: absolute;
+    top: 456px;
+    left: 85px;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    width: 421px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 10px;
+}
+.googleIcon {
+    width: 50px;
+    position: relative;
+    height: 50px;
+    object-fit: cover;
+}
+.otherSignOpinons {
+    position: absolute;
+    top: 817px;
+    left: calc(50% - 90.5px);
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    width: 192px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    gap: 15px;
+}
+.password {
+    position: relative;
+    letter-spacing: 0.15em;
+}
+.passwordSubtiittleContainer {
+    position: absolute;
+    top: 407px;
+    left: 85px;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    width: 156px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+.forgotPassword1 {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0px;
+    text-decoration: underline;
+    letter-spacing: 0.15em;
+}
+.forgotPassword {
+    position: absolute;
+    top: 558px;
+    left: 345px;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    width: 161px;
+    height: 32px;
+    overflow: hidden;
+}
+.signUpText {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 36.5px);
+    letter-spacing: 0.15em;
+}
+.signUpButton {
+    position: absolute;
+    top: 75px;
+    left: 396px;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    width: 161px;
+    height: 32px;
+    overflow: hidden;
+}
+.or1 {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: calc(50% - 10.5px);
+    letter-spacing: 0.15em;
+}
+.or {
+    position: absolute;
+    top: 739px;
+    left: 273px;
+    width: 45px;
+    height: 32px;
+    overflow: hidden;
+}
+.forgotPasswordChild {
+    width: 14px;
+    position: relative;
+    background-color: #fff;
+    height: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.forgotPassword2 {
+    position: absolute;
+    top: 558px;
+    left: 85px;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    width: 183px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    gap: 19px;
+}
+.emailInput {
+    position: absolute;
+    top: 334px;
+    left: 85px;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    width: 421px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 10px;
+}
+.beOneMore {
+    position: absolute;
+    top: calc(50% - 9.5px);
+    left: 0px;
+    letter-spacing: 0.15em;
+}
+.signinWelcoming {
+    position: absolute;
+    top: 157px;
+    left: 85px;
+    background-color: rgba(49, 49, 49, 0.78);
+    width: 239px;
+    height: 19px;
+    overflow: hidden;
+}
+.emailSubtiittleContainer {
+    position: absolute;
+    top: 282px;
+    left: 85px;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    width: 156px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+.signIn {
+    position: absolute;
+    top: calc(50% - 19.5px);
+    left: calc(50% - 74.5px);
+    letter-spacing: 0.15em;
+}
+.signInSubtiittleContainer {
+    position: absolute;
+    top: 206px;
+    left: 85px;
+    border-radius: 15px;
+    width: 421px;
+    height: 55px;
+    overflow: hidden;
+    font-size: 32px;
+}
+.signInCompoment {
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    background-color: rgba(49, 49, 49, 0.78);
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    height: 931px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+}
+

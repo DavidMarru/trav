@@ -8,6 +8,7 @@ import StackedCards from "./HomeCon/StackedCards";
 import destinationsData from './HomeCon/DestinationsData';
 import { motion, AnimatePresence } from 'framer-motion';
 import Footer from "../Pages/Footer"; 
+import LoginContainer from '../LoginContainer'
 
 function Home() {
     const [selectedDestination, setSelectedDestination] = useState(null);
@@ -59,6 +60,7 @@ function Home() {
             <div className='BackgroudImg'>
                 {/* Render default destination images with motion effects only on changes */}
                 <AnimatePresence>
+                    <LoginContainer />
                     {defaultDestinationData && defaultDestinationData.images && (
                         <motion.div
                             className='BackgroudImg'
