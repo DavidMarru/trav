@@ -1,6 +1,8 @@
 :root {
     --font-family1: ;
     --mainColour: white;
+    --BorderW: 0.15rem solid white;
+    --BorderR: 5px ;
     
     --TransBG: #0000002b;
     --hightColour1: #FFFD54;

@@ -1,0 +1,11 @@
+.BG {
+    width: 100vw;
+    display: flex;
+    justify-content: center; align-content: center;
+    background-color: rgb(94, 94, 94);
+    flex-direction: column;
+}
+
+.Wrapper {
+    padding-inline: 4rem;
+  }
