@@ -62,10 +62,6 @@ body * {
   background-color: #00000042;
 }
 
-.box {
-  z-index: 5;
-}
-
 .HomeBG-overlayer {
   position: absolute;
   top: 0;
@@ -96,6 +92,7 @@ body * {
 .box {
   position: relative;
   z-index: 5;
+  height: 100vh;
 }
 
 .wrapper {

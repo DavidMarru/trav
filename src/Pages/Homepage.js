@@ -135,9 +135,9 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="home-FT">
+            {/* <div className="home-FT"> */}
             <Footer />
-            </div>
+            {/* </div> */}
         </div>
     );
 }

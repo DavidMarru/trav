@@ -1,6 +1,8 @@
 .summery {
     width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
     height: 328px;
     overflow: hidden;
     flex-shrink: 0;
@@ -36,9 +38,6 @@
 }
 
 .loremIpsumDolorSitAmetConWrapper {
-    position: absolute;
-    top: 56px;
-    left: 263px;
     border-top: 1px solid #ffff;
     border-bottom: 1px solid #ffff;
     box-sizing: border-box;
@@ -49,6 +48,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    align-self: center;
 }
 
 .loremIpsumDolor {

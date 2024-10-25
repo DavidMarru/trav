@@ -7,7 +7,7 @@ import Footer from "../Pages/Footer";
 import Pixabay from '../img/pexels-pixabay-86703.jpg';
 import DestinationsData from './HomeCon/DestinationsData'; 
 import "./ThingsToDoCon/ThingsToDo.css";
-import BACKGRAND from "../img/pexels-pixabay-86703.jpg"; // Updated path for background image
+import BACKGRAND from "../img/Leonardo_Kino_XL_SEYCHELLES_Africa_3.jpg"; // Updated path for background image
 
 
 function HolidayRentals() {

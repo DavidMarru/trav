@@ -32,14 +32,17 @@ function Surjections () {
                     <img className="img" alt="Rhinoceros" src={rhinoceros} />
                     <div className="text-wrapper">HIKKING</div>
                 </div>
-                <div className="surjections-box">
-                    <img className="img" alt="Party" src={party} />
+                <div className="surjections-box" id='AllDay'>
+                    <img className="img" alt="Party" src={party}  />
                     <div className="text-wrapper">ALL DAY PARTYING</div>
                 </div>
                 <div className="surjections-box">
                     <img className="img" alt="Relaxing" src={relaxing} />
                     <div className="text-wrapper">RELAXING</div>
                 </div>
+            </div>
+            <div className="removeFilter">
+                <p>Remove Filter</p>
             </div>
         </div>
     );

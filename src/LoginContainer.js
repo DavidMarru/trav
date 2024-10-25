@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import Google from './img/Login icons/(Google) Button.svg';
 import Facebook from './img/Login icons/(Facebook) Button.svg';
 import Twitter from './img/Login icons/(Twitter) Button.svg';
-
-
+import { useNavigate } from 'react-router-dom';
 
 
 const SignInComponent = () => {
@@ -13,7 +12,13 @@ const SignInComponent = () => {
 		email: "",
 		passWord: "",
 	  });
-	
+      const navigate = useNavigate();
+
+      const goBack = () => {
+        navigate(-1);
+    };
+
+
 	  const LoginForm = () => {
 		const newErrors = {};
 	
@@ -79,7 +84,7 @@ const SignInComponent = () => {
                 </div>
 
             </div>
-				<div className="Take-me-back-Button">Take me back</div>
+				<div className="Take-me-back-Button" onClick={goBack}>Take me back</div>
         </div>
 		</div>
     );

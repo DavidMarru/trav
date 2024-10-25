@@ -1,7 +1,7 @@
 .surjections {
     align-items: center;
     background-color: #0000002b;
-    border: 2px solid;
+    border: var(--BorderW);
     border-color: #ffffff;
     border-radius: 5px;
     display: flex;
@@ -12,13 +12,26 @@
     height: fit-content;
     top: 0;
     width: fit-content;
+    flex-direction: column;
 }
 
-.surjections .surjections-icons {
+.surjections-icons {
     align-items: center;
     display: flex;
     justify-content: space-between;
     position: relative;
+    gap: 2rem;
+}
+
+.removeFilter {
+    color: white;
+    position: absolute;
+    right: -8.5rem;
+    top: 0.5rem;
+    border: var(--BorderW);
+    border-radius: var(--BorderR);
+    padding: 5px 6px;
+    cursor: pointer;
 }
 
 .ThingsToDoCards-topbox {
@@ -35,7 +48,11 @@
     height: 102px;
     padding: 10px 0px;
     position: relative;
-    width: 8rem;
+    cursor: pointer;
+}
+
+#AllDay {
+    width: 6.5rem;
 }
 
 .surjections .img {
