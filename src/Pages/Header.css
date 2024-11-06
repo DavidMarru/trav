@@ -32,7 +32,7 @@
 
 }
 
-.mainNav li *{
+.mainNav li *, .signIn *{
     align-self: center;
     text-decoration: none;
     color: var(--mainColour);

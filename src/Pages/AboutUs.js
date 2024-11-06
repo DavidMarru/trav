@@ -3,12 +3,13 @@ import Header from "./Header";
 import Footer from "../Pages/Footer";
 import "./ABOUTUSPAGECon/AboutUsPage.css";
 import Tittle from "../Tittle";
-import BACKGRAND from "../img/pexels-pixabay-86703.jpg"; // Updated path for background image
+import BACKGRAND from "../img/pexels-pixabay-86703.jpg";
+import WhyUsImg from "../img/AboutUs/customer_service_in_a_office_.jpg";
+import MissionImg from "../img/AboutUs/misson.jpg";
 
 function AboutUsPage() {
-
-    const [isError, setIsError] = useState(false);
-    const [formData, setFormData] = useState({
+  const [isError, setIsError] = useState(false);
+  const [formData, setFormData] = useState({
     firstName: "",
     secondName: "",
     email: "",
@@ -41,13 +42,15 @@ function AboutUsPage() {
     // Validate email
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email || !emailPattern.test(formData.email)) {
-      newErrors.email = "**Please enter a valid email address (e.g., example@gmail.com).**";
+      newErrors.email =
+        "**Please enter a valid email address (e.g., example@gmail.com).**";
     }
 
     // Validate phone number
     const phonePattern = /^\+\d+$/; // Must start with + followed by numbers
     if (!formData.phoneNumber || !phonePattern.test(formData.phoneNumber)) {
-      newErrors.phoneNumber = "**Please enter a valid phone number (e.g., +1234567890).**";
+      newErrors.phoneNumber =
+        "**Please enter a valid phone number (e.g., +1234567890).**";
     }
 
     // Validate country/region
@@ -80,7 +83,6 @@ function AboutUsPage() {
       setErrors({});
       setIsError(true);
     }
-
   };
 
   return (
@@ -103,16 +105,28 @@ function AboutUsPage() {
               <div className="ourMission1">
                 <div className="ourMission2">OUR MISSION</div>
                 <div className="loremIpsumDolor">
-                  Lorem ipsum dolor sit amet consectetur. Et pulvinar at tincidunt pellentesque mattis enim sit.
-                  Lobortis auctor in rhoncus vestibulum. Donec imperdiet lectus at sit pretium tellus. Eget purus
-                  venenatis lectus tincidunt non. Lorem ipsum dolor sit amet consectetur. Et pulvinar at tincidunt
-                  pellentesque mattis enim sit. Lobortis auctor in rhoncus vestibulum. Donec imperdiet lectus at sit
-                  pretium tellus. Eget purus venenatis lectus tincidunt non.
+                  At WORLD NAVIGATION, we’re passionate about making dream
+                  destinations accessible. We know some of the world’s most
+                  remarkable places aren’t easy to reach, and we’re here to
+                  help. Whether it's a once-in-a-lifetime honeymoon, a trip with
+                  close friends, or a unique getaway, our mission is to provide
+                  seamless, unforgettable travel experiences that make lasting
+                  memories.
                 </div>
               </div>
             </div>
             <div className="imgContainer">
-              <div className="imgContainerChild" />
+              <div className="imgContainerChild">
+                <img
+                  src={[MissionImg]}
+                  alt="MissionImg"
+                  style={{
+                    height: "100%",
+                    objectFit: "cover",
+                    borderRadius: "0.15rem", // Consistent with existing styles
+                  }}
+                />
+              </div>
             </div>
           </div>
           <div className="ourMission">
@@ -120,16 +134,27 @@ function AboutUsPage() {
               <div className="ourMission1">
                 <div className="ourMission2">WHO ARE WE & WHY US?</div>
                 <div className="loremIpsumDolor">
-                  Lorem ipsum dolor sit amet consectetur. Et pulvinar at tincidunt pellentesque mattis enim sit.
-                  Lobortis auctor in rhoncus vestibulum. Donec imperdiet lectus at sit pretium tellus. Eget purus
-                  venenatis lectus tincidunt non. Lorem ipsum dolor sit amet consectetur. Et pulvinar at tincidunt
-                  pellentesque mattis enim sit. Lobortis auctor in rhoncus vestibulum. Donec imperdiet lectus at sit
-                  pretium tellus. Eget purus venenatis lectus tincidunt non.
+                  WORLD NAVIGATION was built by travelers, for travelers. We
+                  understand the excitement—and challenges—of planning the
+                  perfect trip. Our team is dedicated to simplifying travel and
+                  event planning, from personalized itineraries to memorable
+                  gatherings. We’re here to make your travel dreams a reality,
+                  wherever they may lead. Let’s navigate the world together.{" "}
                 </div>
               </div>
             </div>
             <div className="imgContainer">
-              <div className="imgContainerChild" />
+              <div className="imgContainerChild">
+                <img
+                  src={[WhyUsImg]}
+                  alt="WhyUsImg"
+                  style={{
+                    height: "100%",
+                    objectFit: "cover",
+                    borderRadius: "0.15rem", // Consistent with existing styles
+                  }}
+                />
+              </div>
             </div>
           </div>
 
@@ -141,12 +166,19 @@ function AboutUsPage() {
             <form className="contactForm" onSubmit={handleSubmit}>
               {/* First name field */}
               <div className="firstname">
-                <label className={`firstName ${isError ? '' : 'active'}`} htmlFor="Input"></label>
+                <label
+                  className={`firstName ${isError ? "" : "active"}`}
+                  htmlFor="Input"
+                ></label>
                 <input
                   type="text"
                   id="Input"
                   name="firstName"
-                  placeholder={isErrors.firstName ? isErrors.firstName : "Enter your first name"}
+                  placeholder={
+                    isErrors.firstName
+                      ? isErrors.firstName
+                      : "Enter your first name"
+                  }
                   value={formData.firstName}
                   onChange={handleChange}
                 />
@@ -154,12 +186,19 @@ function AboutUsPage() {
 
               {/* Second name field */}
               <div className="secondname">
-                <label className={`secondname ${isError ? '' : 'active'}`} htmlFor="Input"></label>
+                <label
+                  className={`secondname ${isError ? "" : "active"}`}
+                  htmlFor="Input"
+                ></label>
                 <input
                   type="text"
                   id="Input"
                   name="secondName"
-                  placeholder={isErrors.secondName ? isErrors.secondName : "Enter your second name"}
+                  placeholder={
+                    isErrors.secondName
+                      ? isErrors.secondName
+                      : "Enter your second name"
+                  }
                   value={formData.secondName}
                   onChange={handleChange}
                 />
@@ -167,12 +206,17 @@ function AboutUsPage() {
 
               {/* Email field */}
               <div className="email">
-                <label className={`email ${isError ? '' : 'active'}`} htmlFor="Input"></label>
+                <label
+                  className={`email ${isError ? "" : "active"}`}
+                  htmlFor="Input"
+                ></label>
                 <input
                   type="email"
                   id="Input"
                   name="email"
-                  placeholder={isErrors.email ? isErrors.email : "Enter your email"}
+                  placeholder={
+                    isErrors.email ? isErrors.email : "Enter your email"
+                  }
                   value={formData.email}
                   onChange={handleChange}
                 />
@@ -180,17 +224,26 @@ function AboutUsPage() {
 
               {/* Info subheader */}
               <div className="subHeader">
-                <p className="provideUsSome">Provide us some info so we can get back to you.</p>
+                <p className="provideUsSome">
+                  Provide us some info so we can get back to you.
+                </p>
               </div>
 
               {/* Phone number field */}
               <div className="phoneNumber">
-                <label className={`phoneNumber ${isError ? '' : 'active'}`} htmlFor="Input"></label>
+                <label
+                  className={`phoneNumber ${isError ? "" : "active"}`}
+                  htmlFor="Input"
+                ></label>
                 <input
                   type="tel"
                   id="Input"
                   name="phoneNumber"
-                  placeholder={isErrors.phoneNumber ? isErrors.phoneNumber : "Enter your phone number"}
+                  placeholder={
+                    isErrors.phoneNumber
+                      ? isErrors.phoneNumber
+                      : "Enter your phone number"
+                  }
                   value={formData.phoneNumber}
                   onChange={handleChange}
                 />
@@ -203,7 +256,11 @@ function AboutUsPage() {
                   type="text"
                   id={`Input`}
                   name="countryRegion"
-                  placeholder={isErrors.countryRegion ? isErrors.countryRegion : "Enter your country or region"}
+                  placeholder={
+                    isErrors.countryRegion
+                      ? isErrors.countryRegion
+                      : "Enter your country or region"
+                  }
                   value={formData.countryRegion}
                   onChange={handleChange}
                 />
@@ -216,7 +273,11 @@ function AboutUsPage() {
                   id="MInput"
                   name="message"
                   rows="4"
-                  placeholder={isErrors.message ? isErrors.message : "Write your message here"}
+                  placeholder={
+                    isErrors.message
+                      ? isErrors.message
+                      : "Write your message here"
+                  }
                   value={formData.message}
                   onChange={handleChange}
                 />
@@ -224,7 +285,9 @@ function AboutUsPage() {
 
               {/* Submit button */}
               <div className="fullbutton" onClick={handleSubmit}>
-                <button type="submit" className="algeria" >Submit</button>
+                <button type="submit" className="algeria">
+                  Submit
+                </button>
               </div>
             </form>
           </div>

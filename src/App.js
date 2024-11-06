@@ -5,6 +5,7 @@ import ThingsToDoPage from './Pages/ThingsToDoPage'; // Use named import
 import Travel from './Pages/Travel';
 import HolidayRentals from './Pages/HolidayRentals';
 import AboutUs from './Pages/AboutUs';
+import SignInPage from './Pages/SignInPage';
 import TestPage from './Pages/TestPage';
 import './Var.css';
 
@@ -18,10 +19,10 @@ function App() {
                 <Route path="/travel" element={<Travel />} />
                 <Route path="/HolidayRentals" element={<HolidayRentals />} />
                 <Route path="/aboutus" element={<AboutUs />} />
-                <Route path="/TestPage" element={<TestPage />} />
+                <Route path="/SignInPage" element={<SignInPage />} />
             </Routes>
         </Router>
-    );
+    );  
 }
 
 export default App;

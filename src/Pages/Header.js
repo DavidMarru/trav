@@ -21,7 +21,7 @@ function Header() {
                 </div>
 
                 <div className="signIn">
-                    <p>SIGN IN</p>
+                    <Link to="/SignInPage">SIGN IN</Link>
                 </div>
             </div>
         </div>
