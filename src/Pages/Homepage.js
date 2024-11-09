@@ -121,7 +121,7 @@ function Home() {
                     <div className={`showDetails ${selectedDestination ? 'active' : ''}`}>
                         {selectedDestination && currentDestination && (
                             <>
-                                <button className="close-button" onClick={handleCloseDetails}>X</button>
+                                <button className="close-button" onClick={handleCloseDetails}>Close</button>
                                 <DestinationDetails
                                     name={currentDestination.name}
                                     country={currentDestination.country}
@@ -129,7 +129,11 @@ function Home() {
                                     nights={currentDestination.nights}
                                     reviews={currentDestination.reviews}
                                     images={currentDestination.images}
-                                />
+                                    images2={currentDestination.images2}
+                                    images3={currentDestination.images3}
+                                    images4={currentDestination.images4}
+                                    images5={currentDestination.images5}
+                               />
                             </>
                         )}
                     </div>

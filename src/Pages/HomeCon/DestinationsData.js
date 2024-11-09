@@ -4,6 +4,10 @@ import Img3 from "../../img/Default_Kruger_National_Park_landscape_0.jpg";
 import Img4 from "../../img/Default_brazil_inside_amazon_Rainforest_3.jpg";
 import Img5 from "../../img/Leonardo_Kino_XL_Paris_Eiffel_Tower_3.jpg";
 import Img6 from "../../img/Leonardo_Kino_XL_SYDNEY_HARBOUR_BRIDGE_AUSTRALIA_1.jpg";
+import Img7 from '../../img/Kruger-imgs/Leonardo_Kino_XL_KRUGER_NATIONAL_PARK_landscap_2.jpg';
+import Img8 from '../../img/Kruger-imgs/Default_Kruger_National_Park_landscape_2.jpg';
+import Img9 from '../../img/Kruger-imgs/Default_Kruger_National_Park_landscape_3.jpg';
+
 
 import Todo1 from "../../img/ThingsToDo/Walk Among Giants.jpg";
 import Todo2 from "../../img/ThingsToDo/jeep.jpg";
@@ -35,6 +39,10 @@ const DestinationsData = [
     nights: "N/A",
     reviews: 120,
     images: [Img1],
+    images2: [Img7] ,
+    images3: [Img8],
+    images4: [Img9],
+    images5: [Img7],
     description: "Experience the magical sunrise over the ancient temples of Angkor Wat, a UNESCO World Heritage Site and one of the world's most remarkable architectural marvels. Surrounded by lush forests and intricate bas-reliefs, Angkor Wat’s grandeur is best seen in the soft glow of dawn as the sun rises over its iconic silhouette. Join us for a journey into Cambodia's rich spiritual history, where stories of gods and kings come to life amid towering spires and serene landscapes.",
     Rentalimage: [Rentals1],
     rentals: [
@@ -71,6 +79,10 @@ const DestinationsData = [
     nights: "N/A",
     reviews: 90,
     images: [Img3],
+    images2: [Img7] ,
+    images3: [Img8],
+    images4: [Img9],
+    images5: [],
     description: "Step into the heart of Africa’s wilderness at Kruger National Park, a world-renowned safari destination. Home to the majestic Big Five—lion, leopard, rhinoceros, elephant, and Cape buffalo—the park offers a close encounter with some of the continent’s most iconic wildlife. With expansive savannahs, riverine forests, and diverse ecosystems, Kruger promises an unforgettable adventure that brings you face-to-face with nature’s grandeur.",
     Rentalimage: [Rentals3],
     rentals: [
@@ -107,6 +119,10 @@ const DestinationsData = [
     nights: "N/A",
     reviews: 200,
     images: [Img4],
+    images2: [] ,
+    images3: [],
+    images4: [],
+    images5: [],
     description: "Discover the wonders of the Amazon Rainforest, where nature’s diversity flourishes in vibrant color and sound. As the world’s largest tropical rainforest, the Amazon is home to countless species of wildlife, lush plant life, and hidden rivers. Journey deep into this green paradise to experience its unique ecosystems, indigenous cultures, and breathtaking scenery that make it a truly one-of-a-kind adventure.",
     Rentalimage: [Rentals2],
     rentals: [
@@ -143,6 +159,10 @@ const DestinationsData = [
     nights: "N/A",
     reviews: 200,
     images: [Img2],
+    images2: [] ,
+    images3: [],
+    images4: [],
+    images5: [],
     description: "Dive into the rich cultural heritage of Japan’s Kansai region, famous for Kyoto’s traditional temples, Nara’s ancient shrines, and Osaka’s modern urban landscape. The Kansai region is a fusion of history and modernity, where every street and corner reveals centuries-old traditions and scenic landscapes. Explore this captivating destination where Japan’s timeless beauty shines through serene gardens, historic castles, and unique cultural experiences.",
     Rentalimage: [Rentals5],
     rentals: [
@@ -179,6 +199,10 @@ const DestinationsData = [
     nights: "N/A",
     reviews: 250,
     images: [Img5],
+    images2: [] ,
+    images3: [],
+    images4: [],
+    images5: [],
     description: "Embrace the romance of Paris with a visit to the Eiffel Tower, an enduring symbol of French elegance and architectural brilliance. Ascend to its observation decks for panoramic views of the City of Lights, from the winding Seine River to the grand boulevards. The Eiffel Tower is a must-see that offers visitors a chance to appreciate Parisian beauty from new heights.",
     Rentalimage: [Rentals4],
     rentals: [
@@ -215,6 +239,10 @@ const DestinationsData = [
     nights: "N/A",
     reviews: 180,
     images: [Img6],
+    images2: [] ,
+    images3: [],
+    images4: [],
+    images5: [],
     description: "Climb to new heights on the Sydney Harbour Bridge and witness unforgettable panoramic views of the Sydney Opera House and sparkling harbour. This iconic Australian landmark promises a thrilling experience as you ascend to the summit and take in one of the world’s most breathtaking urban landscapes.",
     Rentalimage: [Rentals6],
     rentals: [

@@ -2,11 +2,10 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 933px;
     height: 381px;
     position: absolute;
     top: 19%;
-    right: 14%;
+    right: 11%;
     background: rgba(0, 0, 0, 0.50);
     border-radius: 5px;
     border: 2px solid #ffffff;
@@ -33,13 +32,27 @@
     z-index: 6;
 
   }
+  .closeButton {
+    position: absolute;
+    top: 8%;    
+    right: 20%;
+    background: transparent;
+    letter-spacing: var(--letterspacerM);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    font-size: var(--mFontSize2);
+    transition: 0.3s ease;
+    z-index: 1000;
+}
   
 .close-button {
     position: absolute;
-    top: 17%;
-    right: 12%;
-    font-family:sans-serif;
+    top: 19%;
+    right: 7%;
     background: transparent;
+    letter-spacing: var(--letterspacerM);
     border: none;
     color: white;
     font-size: 24px;

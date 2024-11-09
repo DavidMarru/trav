@@ -1,11 +1,75 @@
-.BG {
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
     width: 100vw;
-    display: flex;
-    justify-content: center; align-content: center;
-    background-color: rgb(94, 94, 94);
-    flex-direction: column;
+    height: 100vh;
+    scroll-behavior:none;
 }
 
-.Wrapper {
-    padding-inline: 4rem;
+.preview3 {
+    position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% + 202px);
+    width: 338px;
+    height: 188px;
+    object-fit: cover;
+}
+.preview4 {
+    position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% + 202px);
+    width: 338px;
+    height: 188px;
+    object-fit: cover;
+}
+.preview2 {
+    position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% - 169px);
+    width: 338px;
+    height: 188px;
+    object-fit: cover;
+}
+.preview1 {
+    position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% - 540px);
+    width: 338px;
+    height: 188px;
+    object-fit: cover;
+}
+.previewimgs {
+    position: absolute;
+    top: 616px;
+    left: 411px;
+    width: 1080px;
+    height: 188px;
+}
+
+.previewimgs *:hover {
+    border-color: var(--hightColour1); /* Highlight on hover */
   }
+
+.previewimgs *{
+    border: var(--BorderW);
+    border-radius: var(--BorderR);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.mainimagecontainer {
+    position: absolute;
+    top: calc(50% - 331.5px);
+    left: calc(50% - 435.5px);
+    width: 872px;
+    height: 484px;
+    object-fit: cover;
+    border: var(--BorderW);
+    border-radius: var(--BorderR);
+}
+.imageview {
+    width: 100%;
+    position: relative;
+    height: 837px;
+}
+
