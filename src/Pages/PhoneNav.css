@@ -1,0 +1,116 @@
+/* General styles for burger menu */
+.burger-menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1001;
+  }
+  
+  /* Styling for the hamburger icon */
+  .burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    padding: 0;
+    z-index: 2;
+    /* margin-left: 2rem;
+    margin-top: 2rem; */
+  }
+  
+  .burger-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+  
+  .burger-icon.open .burger-bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+  
+  .burger-icon.open .burger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-icon.open .burger-bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+  
+  /* The side navigation menu */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 100%; /* Initially hidden off-screen */
+    width: 100vw;
+    height: 100%;
+    background-color: #000000cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 0.3s ease;
+    padding: 20px;
+  }
+  
+  .side-menu.open {
+    left: 0; /* Slide menu into view */
+  }
+  
+  .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-menu ul li {
+    padding: 20px 0;
+  }
+  
+  .side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .side-menu ul li a:hover {
+    color: #f4a261; /* Change color on hover */
+  }
+  
+
+  @media (max-width: 950px) {
+    .burger-icon {
+      display: flex; /* Keep the hamburger icon visible on smaller screens */
+    }
+  
+    .burger-menu {
+      display: block; /* Ensure the burger menu is displayed */
+    }
+  
+    /* Initially hide the menu and make it slide from the left */  
+    .mainNav {
+      display: none; /* Hide the default navigation for mobile */
+    }
+  }
+  
+  /* Default desktop menu */
+  @media (min-width: 950px) {
+    .burger-icon {
+      display: none; /* Hide hamburger icon on desktop */
+    }
+  
+    .side-menu {
+      display: none; /* Hide the mobile menu on desktop */
+    }
+  
+    .mainNav {
+      display: flex; /* Show default navigation bar on larger screens */
+    }
+  }

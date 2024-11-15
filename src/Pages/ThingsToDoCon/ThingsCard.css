@@ -65,7 +65,9 @@
 .default-kruger {
     width: 100%;
     object-fit: contain;
-
+    height: fit-content;
+    align-self: center;
+    border-radius: var(--BorderR);
 }
 
 .location-text {
@@ -80,7 +82,7 @@
 .text-wrapper {
     color: #ffffff;
     font-family: "Outfit-Regular", Helvetica;
-    font-size: 12px;
+    font-size: var(--mFontSize);
     font-weight: 400;
     letter-spacing: 1.8px;
     line-height: normal;
@@ -108,7 +110,7 @@
     left: 21px;
     padding: 1px 17px;
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     width: 267px;
     gap: 0.25rem;
 }

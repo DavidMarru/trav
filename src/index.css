@@ -17,6 +17,10 @@ body * {
 
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 .Page-Spacing {
   display: flex;
   flex-direction: column;
@@ -108,7 +112,6 @@ body * {
 .locationScreen {
   display: flex;
   position: relative;
-  height: 35rem;
   width: 100%;
   
 }
@@ -120,8 +123,8 @@ body * {
   cursor: pointer;
   z-index: 5;
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 35%;
+  right: 6%;
 }
 
 .moreButton {
@@ -229,6 +232,7 @@ body * {
   margin-top: 5rem;
   transition: all 0.5s ease-in-out;
   cursor: default;
+  transform: translatey(50px);
 }
 
 .mbuttonA.mClicked .region *{
@@ -314,7 +318,6 @@ visibility: visible;
   height: fit-content;
   max-width: 24.5rem;
   display: flex;
-  gap: 1.5rem;
   flex-wrap: wrap;
   visibility: visible;
   opacity: 1;
@@ -347,5 +350,54 @@ visibility: visible;
 .showDetails.active {
   display: block;
   animation: opacityUp 0.5s ease-in-out;
+
+}
+
+@media (max-width: 950px) {
+  .locationScreen {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    padding-inline: 0;
+  }
+
+  .mbuttonA.CountryClicked .region {
+    display: none;
+  }
+  .destinations ul * {
+    font-size: 4VW;
+  }
+
+  .region {
+    font-size: var(--MediaMFontSize);
+  }
+
+  .mbuttonA.CountryClicked .destinations {
+    border-left: none;
+  }
+
+  .homeFlex {
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    }
+
+  .mbuttonA  {
+    right: 0;
+  }
+  .mbuttonA.CountryClicked .moreButton {
+    width: 22rem;
+    height: fit-content;
+    transform: translatey(1.5rem);
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .mbuttonA.mClicked .moreButton {
+    height: fit-content;
+    width: fit-content;
+  }
 
 }

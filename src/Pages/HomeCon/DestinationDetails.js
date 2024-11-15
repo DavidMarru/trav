@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import "./DestinationDetails.css";
-import Img1 from "../../img/Kruger-imgs/Default_Kruger_National_Park_natives_humans_1.jpg";
-import Img2 from "../../img/Kruger-imgs/Default_Kruger_National_Park_landscape_2.jpg";
-import Img3 from "../../img/Kruger-imgs/Default_Kruger_National_Park_landscape_3.jpg";
 import star from "../../img/star-svgrepo-com.svg";
 import LikeButton from "../HomeCon/LikeButton";
 import TestPage from "../TestPage";
@@ -16,42 +13,52 @@ const DestinationDetails = ({
   images2,
   images3,
   images4,
-  images5,
 }) => {
   const [showTestPage, setShowTestPage] = useState(false);
+  const [mainImage, setMainImage] = useState(null);
 
   // Function to handle side image click
-  const handleSideImageClick = () => {
-    setShowTestPage(true);
+  const handleSideImageClick = (image) => {
+    setMainImage(image); // Set the clicked image
+    setShowTestPage(true); // Show TestPage
   };
 
   const handleClose = () => {
     setShowTestPage(false);
   };
 
-  // Conditionally render either DestinationDetails or TestPage with a fade effect
   return (
     <>
+      {/* Conditionally render either DestinationDetails or TestPage */}
       {!showTestPage ? (
         <div className="destination-details fade-in">
           <div className="details-prev-img">
-            <img className="mainimg" src={images2} alt={name} onClick={handleSideImageClick}/>
+            {/* Main Image */}
+            <img
+              className="mainimg"
+              src={images2}
+              alt={name}
+              onClick={() => handleSideImageClick(images2)}
+            />
+
+            {/* Side Images */}
             <div className="sideimg-container">
-              {/* Side Images */}
               <img
                 className="sideimg"
                 src={images3}
-                alt="Kruger National Park landscape 1"
-                onClick={handleSideImageClick}
+                alt="Landscape 1"
+                onClick={() => handleSideImageClick(images3)}
               />
               <img
                 className="sideimg"
                 src={images4}
-                alt="Kruger National Park landscape 2"
-                onClick={handleSideImageClick}
+                alt="Landscape 2"
+                onClick={() => handleSideImageClick(images4)}
               />
             </div>
           </div>
+
+          {/* Details Section */}
           <div className="details-info">
             <div className="detailsTop">
               <h2 className="destination-name">{name}</h2>
@@ -60,25 +67,23 @@ const DestinationDetails = ({
             <p className="country-name">{country}</p>
             <div className="review">
               <div className="reviewStar">
-                <img className="Stars" src={star} alt="Star rating" />
-                <img className="Stars" src={star} alt="Star rating" />
-                <img className="Stars" src={star} alt="Star rating" />
-                <img className="Stars" src={star} alt="Star rating" />
-                <img className="Stars" src={star} alt="Star rating" />
+                {[...Array(5)].map((_, i) => (
+                  <img key={i} className="Stars" src={star} alt="Star rating" />
+                ))}
               </div>
               <div className="reviews">{reviews} Reviews</div>
             </div>
             <div className="stayData">
               <div className="stay-info">
                 <div className="stay-info-aline">
-                  <span className="stay-date">Feb 7, 2024</span>
+                  <span className="stay-date">Feb 7th 2024</span>
                   <span className="separator"></span>
-                  <span className="stay-nights">{nights} nights</span>
+                  <span className="stay-nights">nights {nights} </span>
                 </div>
               </div>
               <div className="LpriceHolder">
-                <h3>Lowest price</h3>
-                <h3 className="lowest-price">{lowestPrice}</h3>
+                <p>Lowest price</p>
+                <p className="lowest-price">{lowestPrice}</p>
               </div>
             </div>
             <div className="amenities">
@@ -91,13 +96,15 @@ const DestinationDetails = ({
       ) : (
         <div className="fade-in">
           <button className="closeButton" onClick={handleClose}>
-            close
+            Close
           </button>
+          {/* Pass the mainImage and setMainImage to TestPage */}
           <TestPage
             images2={images2}
             images3={images3}
             images4={images4}
-            images5={images5}
+            mainImage={mainImage}
+            setMainImage={setMainImage}
           />
         </div>
       )}

@@ -7,6 +7,21 @@ import Img6 from "../../img/Leonardo_Kino_XL_SYDNEY_HARBOUR_BRIDGE_AUSTRALIA_1.j
 import Img7 from '../../img/Kruger-imgs/Leonardo_Kino_XL_KRUGER_NATIONAL_PARK_landscap_2.jpg';
 import Img8 from '../../img/Kruger-imgs/Default_Kruger_National_Park_landscape_2.jpg';
 import Img9 from '../../img/Kruger-imgs/Default_Kruger_National_Park_landscape_3.jpg';
+import Img10 from '../../img/Destination/ANGKOR WAT SUNRISE/pexels-kelly-1179532-19063459.jpg';
+import Img11 from '../../img/Destination/ANGKOR WAT SUNRISE/pexels-sergk1-15890765.jpg';
+import Img12 from '../../img/Destination/ANGKOR WAT SUNRISE/pexels-tiago-cardoso-1263068-2495575.jpg';
+import Img13 from '../../img/Destination/AMAZON RAINFOREST/pexels-quang-nguyen-vinh-222549-2161449.jpg';
+import Img14 from '../../img/Destination/AMAZON RAINFOREST/pexels-renan-772481.jpg';
+import Img15 from '../../img/Destination/AMAZON RAINFOREST/pexels-tomfisk-2739666.jpg';
+import Img16 from '../../img/Destination/KANSAI REGION/pexels-kirsten-ann-632003183-17476401.jpg';
+import Img17 from '../../img/Destination/KANSAI REGION/pexels-sami-aksu-48867324-13010468.jpg';
+import Img18 from '../../img/Destination/KANSAI REGION/pexels-satoshi-8780836.jpg';
+import Img19 from '../../img/Destination/EIFFEL TOWER/pexels-cottonbro-9811641.jpg';
+import Img20 from '../../img/Destination/EIFFEL TOWER/pexels-imad-djaout-404400464-14995906.jpg';
+import Img21 from '../../img/Destination/EIFFEL TOWER/pexels-imagestudio-1488315.jpg';
+import Img22 from '../../img/Destination/SYDNEY HARBOUR BRIDGE/pexels-belle-co-99483-799960.jpg';
+import Img23 from '../../img/Destination/SYDNEY HARBOUR BRIDGE/pexels-horace-young-1063288334-20540478.jpg';
+import Img24 from '../../img/Destination/SYDNEY HARBOUR BRIDGE/pexels-pixelcop-1619854.jpg';
 
 
 import Todo1 from "../../img/ThingsToDo/Walk Among Giants.jpg";
@@ -36,13 +51,12 @@ const DestinationsData = [
     country: "CAMBODIA",
     region: "Asia",
     lowestPrice: "$450pps",
-    nights: "N/A",
-    reviews: 120,
+    nights: "5",
+    reviewCount: 120,
     images: [Img1],
-    images2: [Img7] ,
-    images3: [Img8],
-    images4: [Img9],
-    images5: [Img7],
+    images2: [Img10] ,
+    images3: [Img11],
+    images4: [Img12],
     description: "Experience the magical sunrise over the ancient temples of Angkor Wat, a UNESCO World Heritage Site and one of the world's most remarkable architectural marvels. Surrounded by lush forests and intricate bas-reliefs, Angkor Wat’s grandeur is best seen in the soft glow of dawn as the sun rises over its iconic silhouette. Join us for a journey into Cambodia's rich spiritual history, where stories of gods and kings come to life amid towering spires and serene landscapes.",
     Rentalimage: [Rentals1],
     rentals: [
@@ -67,6 +81,23 @@ const DestinationsData = [
         title: "Photography Session",
         details: "Capture the mystical beauty of Angkor Wat at sunrise, with soft golden light illuminating the ancient stonework. This session is perfect for photographers of all levels who want to frame the majesty of the temples, dense jungle, and unique light and shadow interplay. Your guide will help you find the best angles and moments for memorable shots.",
         image: Todo13,
+      },
+    ],
+    reviews: [
+      {
+        name: "John Doe",
+        comment: "A truly breathtaking experience. The sunrise over Angkor Wat is unforgettable!",
+        stars: 5
+      },
+      {
+        name: "Jane Smith",
+        comment: "I loved the historical tour. The guide was incredibly knowledgeable.",
+        stars: 4
+      },
+      {
+        name: "Alice Brown",
+        comment: "The temples are stunning, but the crowds could be overwhelming at times.",
+        stars: 3
       }
     ]
   },
@@ -76,13 +107,12 @@ const DestinationsData = [
     country: "SOUTH AFRICA",
     region: "Africa",
     lowestPrice: "$500pps",
-    nights: "N/A",
-    reviews: 90,
+    nights: "5",
+    reviewCount: 90,
     images: [Img3],
     images2: [Img7] ,
     images3: [Img8],
     images4: [Img9],
-    images5: [],
     description: "Step into the heart of Africa’s wilderness at Kruger National Park, a world-renowned safari destination. Home to the majestic Big Five—lion, leopard, rhinoceros, elephant, and Cape buffalo—the park offers a close encounter with some of the continent’s most iconic wildlife. With expansive savannahs, riverine forests, and diverse ecosystems, Kruger promises an unforgettable adventure that brings you face-to-face with nature’s grandeur.",
     Rentalimage: [Rentals3],
     rentals: [
@@ -108,6 +138,23 @@ const DestinationsData = [
         details: "Enjoy a peaceful bird-watching excursion in Kruger's renowned bird habitats. Spot rare species like the Saddle-billed Stork and Martial Eagle, among hundreds of colorful birds. This guided experience allows bird enthusiasts to catch unique sightings while learning about bird behavior and migration patterns in one of the world's richest avian environments.",
         image: Todo14,
       }
+    ],
+    reviews: [
+      {
+        name: "Tom Harris",
+        comment: "The Big Five safari was incredible! We saw lions, elephants, and more!",
+        stars: 5
+      },
+      {
+        name: "Maya Patel",
+        comment: "The bird watching tour was serene and very rewarding. I saw some rare species.",
+        stars: 4
+      },
+      {
+        name: "Chris Lee",
+        comment: "The experience was amazing, but the jeep ride was a bit bumpy for my liking.",
+        stars: 3
+      }
     ]
   },
   {
@@ -116,13 +163,12 @@ const DestinationsData = [
     country: "BRAZIL",
     region: "South America",
     lowestPrice: "$400pps",
-    nights: "N/A",
-    reviews: 200,
+    nights: "5",
+    reviewCount: 200,
     images: [Img4],
-    images2: [] ,
-    images3: [],
-    images4: [],
-    images5: [],
+    images2: [Img13] ,
+    images3: [Img14],
+    images4: [Img15],
     description: "Discover the wonders of the Amazon Rainforest, where nature’s diversity flourishes in vibrant color and sound. As the world’s largest tropical rainforest, the Amazon is home to countless species of wildlife, lush plant life, and hidden rivers. Journey deep into this green paradise to experience its unique ecosystems, indigenous cultures, and breathtaking scenery that make it a truly one-of-a-kind adventure.",
     Rentalimage: [Rentals2],
     rentals: [
@@ -148,6 +194,23 @@ const DestinationsData = [
         details: "Capture stunning images of the Amazon's exotic wildlife, from jaguars and sloths to colorful macaws and tiny poison dart frogs. With a photography-focused guide, you'll visit prime locations for spotting animals and learn techniques to photograph them in challenging light conditions. This is an ideal experience for both amateur and seasoned wildlife photographers.",
         image: Todo11,
       }
+    ],
+    reviews: [
+      {
+        name: "David Ball",
+        comment: "Stunning plant life and unique animals. This is a true nature lover's paradise.",
+        stars: 5
+      },
+      {
+        name: "Lucy Green",
+        comment: "The boat tour was amazing. I learned so much about the rainforest's ecosystem.",
+        stars: 4
+      },
+      {
+        name: "Oliver Brown",
+        comment: "I expected more wildlife sightings, but the experience was still very immersive.",
+        stars: 3
+      }
     ]
   },
   {
@@ -156,13 +219,12 @@ const DestinationsData = [
     country: "JAPAN",
     region: "Asia",
     lowestPrice: "$280pps",
-    nights: "N/A",
-    reviews: 200,
+    nights: "5",
+    reviewCount: 200,
     images: [Img2],
-    images2: [] ,
-    images3: [],
-    images4: [],
-    images5: [],
+    images2: [Img16] ,
+    images3: [Img17],
+    images4: [Img18],
     description: "Dive into the rich cultural heritage of Japan’s Kansai region, famous for Kyoto’s traditional temples, Nara’s ancient shrines, and Osaka’s modern urban landscape. The Kansai region is a fusion of history and modernity, where every street and corner reveals centuries-old traditions and scenic landscapes. Explore this captivating destination where Japan’s timeless beauty shines through serene gardens, historic castles, and unique cultural experiences.",
     Rentalimage: [Rentals5],
     rentals: [
@@ -188,7 +250,24 @@ const DestinationsData = [
         details: "Visit the beautiful Nara Park, where gentle deer roam freely and seem to bow for treats. Explore the ancient temples and shrines nestled in this peaceful setting, and enjoy a unique experience that combines nature, wildlife, and historic beauty in one of Japan's oldest parks.",
         image: Todo7,
       }
-    ]
+    ],
+    reviews: [
+      {
+        name: "James Yamada",
+        comment: "The tea ceremony was a peaceful and meditative experience. Highly recommend!",
+        stars: 5
+      },
+      {
+        name: "Anna Sato",
+        comment: "Nara Park is amazing. The deer are so friendly, and the temples are beautiful.",
+        stars: 4
+      },
+      {
+        name: "Henry Tanaka",
+        comment: "Kyoto’s streets are lovely, but I felt like there were too many tourists in some areas.",
+        stars: 3
+      }
+    ],
   },
   {
     id: 5,
@@ -196,13 +275,12 @@ const DestinationsData = [
     country: "FRANCE",
     region: "Europe",
     lowestPrice: "$350pps",
-    nights: "N/A",
-    reviews: 250,
+    nights: "5",
+    reviewCount: 250,
     images: [Img5],
-    images2: [] ,
-    images3: [],
-    images4: [],
-    images5: [],
+    images2: [Img19] ,
+    images3: [Img20],
+    images4: [Img21],
     description: "Embrace the romance of Paris with a visit to the Eiffel Tower, an enduring symbol of French elegance and architectural brilliance. Ascend to its observation decks for panoramic views of the City of Lights, from the winding Seine River to the grand boulevards. The Eiffel Tower is a must-see that offers visitors a chance to appreciate Parisian beauty from new heights.",
     Rentalimage: [Rentals4],
     rentals: [
@@ -228,6 +306,23 @@ const DestinationsData = [
         details: "Experience the magic of Paris at night with a guided tour of its illuminated landmarks. From the Eiffel Tower's sparkling lights to the Seine River’s romantic glow, this tour reveals why Paris is known as the City of Lights. It’s an enchanting journey through the heart of Parisian romance and elegance.",
         image: Todo5,
       }
+    ],
+    reviews: [
+      {
+        name: "Eve Dupont",
+        comment: "The Eiffel Tower is a must-see. The view from the top is simply stunning!",
+        stars: 5
+      },
+      {
+        name: "Lucien Bernard",
+        comment: "Montmartre is a charming neighborhood, with lots of history and fantastic views.",
+        stars: 4
+      },
+      {
+        name: "Charlotte Rousseau",
+        comment: "I had an unforgettable night lights tour. Paris truly lives up to its nickname as 'The City of Lights'.",
+        stars: 5
+      }
     ]
   },
   {
@@ -236,13 +331,12 @@ const DestinationsData = [
     country: "AUSTRALIA",
     region: "Australia",
     lowestPrice: "$300pps",
-    nights: "N/A",
-    reviews: 180,
+    nights: "5",
+    reviewCount: 180,
     images: [Img6],
-    images2: [] ,
-    images3: [],
-    images4: [],
-    images5: [],
+    images2: [Img22] ,
+    images3: [Img23],
+    images4: [Img24],
     description: "Climb to new heights on the Sydney Harbour Bridge and witness unforgettable panoramic views of the Sydney Opera House and sparkling harbour. This iconic Australian landmark promises a thrilling experience as you ascend to the summit and take in one of the world’s most breathtaking urban landscapes.",
     Rentalimage: [Rentals6],
     rentals: [
@@ -267,6 +361,23 @@ const DestinationsData = [
         title: "Beach Day at Bondi",
         details: "Spend a day at Bondi Beach, relaxing on its golden sands and soaking in the vibrant surf culture. Watch surfers catching waves, enjoy a seaside stroll, or indulge in local treats. Bondi is the perfect spot to unwind and experience Australia’s beach lifestyle.",
         image: Todo3,
+      }
+    ],
+    reviews: [
+      {
+        name: "Eve Dupont",
+        comment: "The Eiffel Tower is a must-see. The view from the top is simply stunning!",
+        stars: 5
+      },
+      {
+        name: "Lucien Bernard",
+        comment: "Montmartre is a charming neighborhood, with lots of history and fantastic views.",
+        stars: 5
+      },
+      {
+        name: "Charlotte Rousseau",
+        comment: "I had an unforgettable night lights tour. Paris truly lives up to its nickname as 'The City of Lights'.",
+        stars: 5
       }
     ]
   }

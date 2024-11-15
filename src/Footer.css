@@ -286,3 +286,43 @@ li {
     flex-direction: column;
     gap: 1rem;
 }
+
+@media (max-width: 1207px) {
+    .top-left {
+        flex-direction: column;
+    }
+    .footer .footer-upper {
+        height: fit-content;
+        align-content: center;
+        padding: 4rem 1rem;
+        flex-direction: column;
+        align-items:start;
+    }
+    .footer .top-left{
+        width: fit-content;
+        align-items: start;
+        gap: 3rem;
+    }
+
+    .FTnav li{
+        gap: 2rem;
+    }
+
+    .footer .add-on-links {
+        height: fit-content;
+    }
+    
+    .footer .media-links-wrapper {
+        border-left-style: none;
+        border-top: 2px solid ;
+        color: white;
+    }
+
+    .footer .p {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .p {
+    }
+}

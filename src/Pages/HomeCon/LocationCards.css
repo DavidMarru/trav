@@ -2,11 +2,11 @@
     width: 25rem;
     overflow: hidden;
     position: absolute;
-    top: 25%;
   }
   
   .card-content {
     padding: 1rem;
+    margin-top: 25%
   }
 
   
@@ -31,8 +31,9 @@
     padding-bottom: 0.25rem;
     padding-left: 0.3rem;
     margin-right: 2rem;
-    border-bottom: 2px white solid;
-    border-left: 2px white solid;
+    border-bottom: 0.15rem solid white;
+    border-left: 0.15rem solid white;
+    border-bottom-left-radius: 0.8rem;
     border-top: none;
     border-right: none;
     font-size: var(--mFontSize);
@@ -68,3 +69,67 @@
     background-color: var(--hightColourButton);
   }
   
+  @media (max-width: 950px) {
+    .card {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: fit-content;
+    }
+
+    .card-content {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .locationScreen {
+      flex-direction: column;
+    }
+
+    .destination {
+      font-size: 60px;
+    }
+
+    .country {
+      font-size: var(--MediaMFontSize);
+    }
+
+    .details:hover {
+      border-left: 0 ;
+      border-top: 0.15rem solid var(--hightColour1) ;
+
+    }
+      .details {
+      font-size: var(--MediaMFontSize);
+      border-left: 0 ;
+      border-radius: 0;
+      border-top: 0.15rem solid white ;
+      margin: 0;
+      width: 100%;
+      align-self: center;
+    }
+
+    .book-now {
+      font-size: var(--MediaMFontSize);
+      margin-top:2.5rem;
+      width: 100%;
+      align-self: center;
+    }
+  
+    .moreButton {
+      font-size: var(--MediaMFontSize);
+      width: fit-content;
+      height: fit-content;
+    }
+    .mbuttonA {
+      position: relative;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .arrowWrapper {
+      display: none;
+    }
+  }

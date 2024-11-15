@@ -214,7 +214,7 @@
     margin-top: 0.5rem;
   }
 
-  .LpriceHolder h3 {
+  .LpriceHolder p {
     font-size: var(--mFontSize2);
     letter-spacing: var(--letterspacerM);
     font-weight: 600;
@@ -240,6 +240,9 @@
     height: 9rem;
   }
 
+  .details-prev-img *{
+    cursor: pointer;
+  }
   .details-prev-img {
     display: flex;
     position: relative;
@@ -253,6 +256,66 @@
     gap: 10px; /* Space between the side images */
   }
 
- 
+  @media (max-width: 1207px) {
+    
+
+    .destination-details {
+      justify-content: start;
+      flex-direction: column;
+      height: fit-content;
+      max-width: 89%;
+      top: 10%;
+      right: 0;
+      scroll-behavior: smooth;
+      overflow-y: visible;
+    }
+    
+    .close-button, .closeButton {
+    top: 2rem;
+    right: 76%;
+    }
+
+    .details-prev-img {
+      flex-direction: column;
+    }
+
+    .sideimg-container {
+      flex-direction: row;
+    }
+
+    .sideimg {
+      width: 165px;
+      aspect-ratio: 9 / 9;
+      object-fit: contain;
+    }    
+    .mainimg{
+      height: 50vw;
+    }
+
+    .stay-date, .stay-nights {
+      width: 20vw;
+      text-align: center;
+
+    }
+
+    .stayData * {
+      font-size: 4vw;
+    }
+
+    .LpriceHolder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: start;
+    }
+
+    .LpriceHolder p {
+      font-size: 4vw;
+    font-weight: 400;
+    letter-spacing: 2.55px;
+    text-align: center;
+    }
+  
+  }
 
   

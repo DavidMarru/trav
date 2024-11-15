@@ -1,6 +1,12 @@
+import { useState } from 'react';
 import './LocationCards.css';
 
 const LocationCards = ({ Region,destination, country, details, onBookNow }) => {
+  
+  const [isDetailsClicked, setDetailsClicked] = useState(false);
+  const handleDetailsClicked= () => {
+    setDetailsClicked(true);
+  } 
   return (
     <div className="card">
       <div className="card-content">
@@ -9,7 +15,7 @@ const LocationCards = ({ Region,destination, country, details, onBookNow }) => {
         <button className="details" onClick={details}>
           DETAILS
         </button>
-        <button className="book-now" onClick={onBookNow}>
+        <button className="book-now" onClick={onBookNow} >
           BOOK HERE
         </button>
       </div>
