@@ -1,36 +1,47 @@
-import React, { useState } from 'react';
-import './PhoneNav.css'; // Import the CSS for styling
+// import React from "react";
+// import "./TestPage.css";
 
-function BurgerMenu() {
-  const [isOpen, setIsOpen] = useState(false); // State to track if the menu is open or closed
+// function TestPage({ images2, images3, images4, mainImage, setMainImage }) {
+//   // Array of preview images
+//   const previewImages = [images2, images3, images4].filter(Boolean);
 
-  // Function to toggle the menu open/closed
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+//   // Function to handle click on a preview image
+//   const handlePreviewClick = (image) => {
+//     setMainImage(image); // Update the mainImage using the passed setMainImage function
+//   };
 
-  return (
-    <div className="burger-menu">
-      {/* Hamburger Icon */}
-      <div className={`burger-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <div className="burger-bar"></div>
-        <div className="burger-bar"></div>
-        <div className="burger-bar"></div>
-      </div>
+//   const handleClose = () => {
+//     setMainImage(null);
+//   };
 
-      {/* Side Menu */}
-      <div className={`side-menu ${isOpen ? 'open' : ''}`}>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/things-to-do">Things to Do</a></li>
-          <li><a href="/holiday-rentals">Holiday Rentals</a></li>
-          <li><a href="/about-us">About Us</a></li>
-          <li><a href="/test-page">Test Page</a></li>
-          <li><a href="/SignInPage">SIGN IN</a></li>
-        </ul>
-      </div>
-    </div>
-  );
-}
+//   return (
+//     <>
+//       <div className="imageview">
+//         {/* Overlay for the blurred background effect */}
+//         <div className="overlay" />
 
-export default BurgerMenu;
+//         {/* Preview Images */}
+//         <div className="previewimgs">
+//           {previewImages.map((img, index) => (
+//             <img
+//               key={index}
+//               className={`preview${index + 1}`}
+//               alt={`preview ${index + 1}`}
+//               src={img}
+//               onClick={() => handlePreviewClick(img)}
+//             />
+//           ))}
+//         </div>
+
+//         {/* Main Image */}
+//         {mainImage && (
+//           <div className="mainImageWrapper">
+//             <img className="mainimagecontainer" alt="main" src={mainImage} />
+//           </div>
+//         )}
+//       </div>
+//     </>
+//   );
+// }
+
+// export default TestPage;

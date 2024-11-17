@@ -1,4 +1,4 @@
-.overlay {
+/* .overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.75);
     width: 100vw;
@@ -40,15 +40,15 @@
 }
 .previewimgs {
     position: absolute;
-    top: 616px;
-    left: 411px;
+    top: 59%;
+    left: 15%;
     width: 1080px;
     height: 188px;
 }
 
 .previewimgs *:hover {
     border-color: var(--hightColour1); /* Highlight on hover */
-  }
+  /* }
 
 .previewimgs *{
     border: var(--BorderW);
@@ -56,13 +56,18 @@
     transition: 0.3s ease-in-out;
     cursor: pointer;
 
+.mainImageWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 }
 .mainimagecontainer {
     position: absolute;
-    top: calc(50% - 331.5px);
-    left: calc(50% - 435.5px);
-    width: 872px;
-    height: 484px;
+    top: calc(50% - 390.5px);
+    left: 30%;
+    width: 43%;
     object-fit: cover;
     border: var(--BorderW);
     border-radius: var(--BorderR);
@@ -72,4 +77,4 @@
     position: relative;
     height: 837px;
 }
-
+ */

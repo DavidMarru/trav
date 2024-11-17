@@ -32,7 +32,7 @@ function MoreDestinotions({ onDestinationChange }) {
 
     const handleClick = () => {
         if (!CountryClicked) { 
-            setMClicked(true); 
+            setMClicked(true);     
         }
     };
 
@@ -47,7 +47,9 @@ function MoreDestinotions({ onDestinationChange }) {
         const defaultDestination = countryDefaultDestinations[country];
         console.log('Country selected:', country, 'Default destination:', defaultDestination);
         onDestinationChange(defaultDestination);
-        // You can add additional logic here, like setting state for a selected country or navigating
+        setMClicked(false); 
+        setCountryClicked(false); 
+        setSelectedRegion('');
     };
 
     const handleMouseLeave = () => {

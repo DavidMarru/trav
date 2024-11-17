@@ -6,7 +6,7 @@ import Travel from './Pages/Travel';
 import HolidayRentals from './Pages/HolidayRentals';
 import AboutUs from './Pages/AboutUs';
 import SignInPage from './Pages/SignInPage';
-import TestPage from './Pages/TestPage';
+import previewImg from './Pages/PreviewImg';
 import './Var.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                 <Route path="/HolidayRentals" element={<HolidayRentals />} />
                 <Route path="/aboutus" element={<AboutUs />} />
                 <Route path="/SignInPage" element={<SignInPage />} />
-                <Route path="/Testpage" element={<TestPage />} />
+                <Route path="/previewImg" element={<previewImg />} />
             </Routes>
         </Router>
     );  

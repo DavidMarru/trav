@@ -88,7 +88,7 @@
     }
 
     .destination {
-      font-size: 60px;
+      font-size: var(--MediaLFontSize);
     }
 
     .country {
@@ -110,11 +110,21 @@
       align-self: center;
     }
 
+    .book-now:hover {
+      background: none;
+
+    }
+
+    .mbuttonA.mClicked {
+      display: flex;
+      justify-content: start !important;
+    }
     .book-now {
       font-size: var(--MediaMFontSize);
-      margin-top:2.5rem;
       width: 100%;
       align-self: center;
+      background: none;
+      border-bottom:  0.15rem solid white ;
     }
   
     .moreButton {
@@ -124,9 +134,9 @@
     }
     .mbuttonA {
       position: relative;
-      margin-top: 2rem;
       display: flex;
-      justify-content: center;
+      height: fit-content;
+      top: 0;
     }
 
     .arrowWrapper {

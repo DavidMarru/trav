@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./DestinationDetails.css";
 import star from "../../img/star-svgrepo-com.svg";
 import LikeButton from "../HomeCon/LikeButton";
-import TestPage from "../TestPage";
+import PreviewImg from "../PreviewImg";
 
 const DestinationDetails = ({
   name,
@@ -14,23 +14,23 @@ const DestinationDetails = ({
   images3,
   images4,
 }) => {
-  const [showTestPage, setShowTestPage] = useState(false);
+  const [showPreviewImg, setShowPreviewImg] = useState(false);
   const [mainImage, setMainImage] = useState(null);
 
   // Function to handle side image click
   const handleSideImageClick = (image) => {
     setMainImage(image); // Set the clicked image
-    setShowTestPage(true); // Show TestPage
+    setShowPreviewImg(true); // Show PreviewImg
   };
 
   const handleClose = () => {
-    setShowTestPage(false);
+    setShowPreviewImg(false);
   };
 
   return (
     <>
-      {/* Conditionally render either DestinationDetails or TestPage */}
-      {!showTestPage ? (
+      {/* Conditionally render either DestinationDetails or PreviewImg */}
+      {!showPreviewImg ? (
         <div className="destination-details fade-in">
           <div className="details-prev-img">
             {/* Main Image */}
@@ -95,17 +95,17 @@ const DestinationDetails = ({
         </div>
       ) : (
         <div className="fade-in">
-          <button className="closeButton" onClick={handleClose}>
-            Close
-          </button>
-          {/* Pass the mainImage and setMainImage to TestPage */}
-          <TestPage
+          {/* Pass the mainImage and setMainImage to PreviewImg */}
+          <PreviewImg
             images2={images2}
             images3={images3}
             images4={images4}
             mainImage={mainImage}
             setMainImage={setMainImage}
           />
+          <button className="closeButton" onClick={handleClose}>
+            Close
+          </button>
         </div>
       )}
     </>

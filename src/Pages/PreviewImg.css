@@ -1,0 +1,75 @@
+.imageview {
+    width: 100vw;
+    height: 100vh !important;
+    position: relative;
+    height: 837px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.previewimgs {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+}
+
+.previewimgs *:hover {
+    border-color: var(--hightColour1); /* Highlight on hover */
+  }
+
+.previewimgs *{
+    border: var(--BorderW);
+    border-radius: var(--BorderR);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.preview {
+    width: 13.3vw;
+    object-fit: cover;
+}
+
+.mainimagecontainer {
+    position: relative;
+    z-index: 1000;
+    width:50%;
+    object-fit: cover;
+    border: var(--BorderW);
+    border-radius: var(--BorderR);
+    align-self: center;
+
+}
+
+.closepreview {
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    background: transparent;
+    letter-spacing: var(--letterspacerM);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    font-size: var(--mFontSize2);
+    transition: 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior:none;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 950px) {
+
+    
+}

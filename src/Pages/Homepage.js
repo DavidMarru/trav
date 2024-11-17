@@ -8,7 +8,7 @@ import StackedCards from "./HomeCon/StackedCards";
 import destinationsData from "./HomeCon/DestinationsData";
 import { motion, AnimatePresence } from "framer-motion";
 import Footer from "../Pages/Footer";
-import TestPage from "./TestPage";
+import PhoneNav from "./PhoneNav";
 
 function Home() {
   const [selectedDestination, setSelectedDestination] = useState(null);
@@ -60,7 +60,7 @@ function Home() {
 
   return (
     <div className={`HomeBody ${isVisible ? "noScroll" : ""}`} >
-      <TestPage />
+      <PhoneNav />
       <div className="HomeBG-overlayer"> </div>
       <div className="BackgroudImg">
         {/* Render default destination images with motion effects only on changes */}
@@ -101,26 +101,11 @@ function Home() {
           <StackedCards />
           <div
             className={`backDrop ${isActive ? "active" : ""}`}
-            onClick={handleCloseDetails}
             style={{ display: isVisible ? "block" : "none" }}
           ></div>
 
           <Header />
-          <div className="locationScreen">
-            <AnimatePresence>
-              {/* Dynamic Default Destination with Motion */}
-              {defaultDestinationData && (
-                <motion.div
-                  key={defaultDestinationData.name} // Key to re-mount on changes
-                  initial={{ opacity: 0, x: 20 }} // Start from below
-                  animate={{ opacity: 1, x: 0 }} // Fade in and slide up
-                  exit={{ opacity: 0, x: -20 }} // Fade out and slide down
-                  transition={{ duration: 0.5 }} // Transition duration
-                >
-                </motion.div>
-              )}
-            </AnimatePresence>
-            <div
+          <div
               className={`showDetails ${selectedDestination ? "active" : ""}`}
             >
               {selectedDestination && currentDestination && (
@@ -143,6 +128,21 @@ function Home() {
                 </>
               )}
             </div>
+          <div className="locationScreen">
+            <AnimatePresence>
+              {/* Dynamic Default Destination with Motion */}
+              {defaultDestinationData && (
+                <motion.div
+                  key={defaultDestinationData.name} // Key to re-mount on changes
+                  initial={{ opacity: 0, x: 20 }} // Start from below
+                  animate={{ opacity: 1, x: 0 }} // Fade in and slide up
+                  exit={{ opacity: 0, x: -20 }} // Fade out and slide down
+                  transition={{ duration: 0.5 }} // Transition duration
+                >
+                </motion.div>
+              )}
+            </AnimatePresence>
+           
           </div>
           <div className="homeFlex">
               <LocationCards

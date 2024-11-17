@@ -348,12 +348,27 @@ visibility: visible;
 }
 
 .showDetails.active {
-  display: block;
+  display: flex;
   animation: opacityUp 0.5s ease-in-out;
 
 }
 
 @media (max-width: 950px) {
+
+  .box {
+    height: fit-content;
+  }
+
+  .showDetails.active {
+    display: flex;
+  }
+
+  .showDetails {
+    position: relative;
+    display: none;
+
+  }
+
   .locationScreen {
     flex-direction: column;
   }
@@ -365,6 +380,17 @@ visibility: visible;
   .mbuttonA.CountryClicked .region {
     display: none;
   }
+
+  .mbuttonA.CountryClicked .destinations ul {
+    max-width: 22.5rem;
+
+  }
+
+  .destinations ul {
+    gap: 1rem;
+    padding-inline: 0.2rem;
+  }
+
   .destinations ul * {
     font-size: 4VW;
   }
@@ -378,11 +404,14 @@ visibility: visible;
   }
 
   .homeFlex {
-    margin-top: 1vw;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     flex-direction: column;
-    gap: 2rem;
+    padding-top: 1rem;
+    height: 90vh;
     }
 
   .mbuttonA  {
@@ -394,10 +423,13 @@ visibility: visible;
     transform: translatey(1.5rem);
     flex-direction: column;
     padding: 1rem;
+    margin: 0;
   }
   .mbuttonA.mClicked .moreButton {
     height: fit-content;
     width: fit-content;
+    margin: 0;
+    transform:none
   }
 
 }
