@@ -61,6 +61,32 @@ function Home() {
   return (
     <div className={`HomeBody ${isVisible ? "noScroll" : ""}`} >
       <PhoneNav />
+      <div className="detailsContainer">
+          <div
+              className={`showDetails ${selectedDestination ? "active" : ""}`}
+            >
+              {selectedDestination && currentDestination && (
+                  <>
+                  <button className="close-button" onClick={handleCloseDetails}>
+                    Close
+                  </button>
+                  <DestinationDetails
+                    name={currentDestination.name}
+                    country={currentDestination.country}
+                    lowestPrice={currentDestination.lowestPrice}
+                    nights={currentDestination.nights}
+                    reviews={currentDestination.reviewCount}
+                    images={currentDestination.images}
+                    images2={currentDestination.images2}
+                    images3={currentDestination.images3}
+                    images4={currentDestination.images4}
+                    images5={currentDestination.images5}
+                  />
+                </>
+              )}
+            </div>
+
+          </div>
       <div className="HomeBG-overlayer"> </div>
       <div className="BackgroudImg">
         {/* Render default destination images with motion effects only on changes */}
@@ -105,29 +131,7 @@ function Home() {
           ></div>
 
           <Header />
-          <div
-              className={`showDetails ${selectedDestination ? "active" : ""}`}
-            >
-              {selectedDestination && currentDestination && (
-                  <>
-                  <button className="close-button" onClick={handleCloseDetails}>
-                    Close
-                  </button>
-                  <DestinationDetails
-                    name={currentDestination.name}
-                    country={currentDestination.country}
-                    lowestPrice={currentDestination.lowestPrice}
-                    nights={currentDestination.nights}
-                    reviews={currentDestination.reviewCount}
-                    images={currentDestination.images}
-                    images2={currentDestination.images2}
-                    images3={currentDestination.images3}
-                    images4={currentDestination.images4}
-                    images5={currentDestination.images5}
-                  />
-                </>
-              )}
-            </div>
+
           <div className="locationScreen">
             <AnimatePresence>
               {/* Dynamic Default Destination with Motion */}

@@ -269,10 +269,11 @@
       right: 0.5px;
       scroll-behavior: smooth;
       overflow-y: visible;
+      padding: 20px 10px;
     }
     
     .close-button, .closeButton {
-    top: 2rem;
+    top: -3rem;
     right: 76%;
     }
 
@@ -282,6 +283,7 @@
 
     .sideimg-container {
       flex-direction: row;
+      display: none;
     }
 
     .sideimg {

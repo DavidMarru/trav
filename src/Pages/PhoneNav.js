@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import './PhoneNav.css'; 
+import React, { useState } from "react";
+import "./PhoneNav.css";
+import { Link } from 'react-router-dom';
 
 function PhoneNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,30 +8,36 @@ function PhoneNav() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     if (isOpen) {
-      
-      document.body.classList.remove('noScroll');
+      document.body.classList.remove("noScroll");
     } else {
-   
-      document.body.classList.add('noScroll');
+      document.body.classList.add("noScroll");
     }
-
   };
 
   return (
     <div className="burger-menu">
-      <div className={`burger-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+      <div
+        className={`burger-icon ${isOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
         <div className="burger-bar"></div>
         <div className="burger-bar"></div>
         <div className="burger-bar"></div>
       </div>
 
-      <div className={`side-menu ${isOpen ? 'open' : ''}`}>
+      <div className={`side-menu ${isOpen ? "open" : ""}`}>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/things-to-do">Things to Do</a></li>
-          <li><a href="/holiday-rentals">Holiday Rentals</a></li>
-          <li><a href="/about-us">About Us</a></li>
-          <li><a href="/test-page">Test Page</a></li>
+          <li>
+            <Link to="/">HOME</Link>
+            <p>|</p>
+            <Link to="/ThingsToDoPage">THINGS TO DO</Link>
+            <p>|</p>
+            <Link to="/HolidayRentals">HOLIDAY RENTALS</Link>
+            <p>|</p>
+            <Link to="/aboutus">ABOUT US</Link>
+            <p>|</p>
+            <Link to="/TestPage">Test Page</Link>
+          </li>
         </ul>
       </div>
     </div>

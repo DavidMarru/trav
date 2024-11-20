@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Header from "./Header";
-import Footer from "../Pages/Footer";
+import Footer from "./Footer";
 import "./ABOUTUSPAGECon/AboutUsPage.css";
 import Tittle from "../Tittle";
 import BACKGRAND from "../img/pexels-pixabay-86703.jpg";
 import WhyUsImg from "../img/AboutUs/customer_service_in_a_office_.jpg";
 import MissionImg from "../img/AboutUs/misson.jpg";
+import PhoneNav from "../Pages/PhoneNav"
 
 function AboutUsPage() {
   const [isError, setIsError] = useState(false);
@@ -87,6 +88,7 @@ function AboutUsPage() {
 
   return (
     <div className="AboutUsPageBody">
+      <PhoneNav />
       <div className="ThingsToDo-Background">
         <div className="overLayer"></div>
         <img className="ThingsBackground" src={BACKGRAND} alt="pixabay" />
@@ -105,6 +107,7 @@ function AboutUsPage() {
               <div className="ourMission1">
                 <div className="ourMission2">OUR MISSION</div>
                 <div className="loremIpsumDolor">
+                  <p>
                   At WORLD NAVIGATION, we’re passionate about making dream
                   destinations accessible. We know some of the world’s most
                   remarkable places aren’t easy to reach, and we’re here to
@@ -112,6 +115,7 @@ function AboutUsPage() {
                   close friends, or a unique getaway, our mission is to provide
                   seamless, unforgettable travel experiences that make lasting
                   memories.
+                  </p>
                 </div>
               </div>
             </div>
@@ -164,6 +168,12 @@ function AboutUsPage() {
             </div>
 
             <form className="contactForm" onSubmit={handleSubmit}>
+            <div className="subHeader">
+                <p className="provideUsSome">
+                  Provide us some info so we can get back to you.
+                </p>
+              </div>
+
               {/* First name field */}
               <div className="firstname">
                 <label
@@ -223,11 +233,6 @@ function AboutUsPage() {
               </div>
 
               {/* Info subheader */}
-              <div className="subHeader">
-                <p className="provideUsSome">
-                  Provide us some info so we can get back to you.
-                </p>
-              </div>
 
               {/* Phone number field */}
               <div className="phoneNumber">

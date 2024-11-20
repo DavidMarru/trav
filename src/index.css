@@ -232,7 +232,6 @@ body * {
   margin-top: 5rem;
   transition: all 0.5s ease-in-out;
   cursor: default;
-  transform: translatey(50px);
 }
 
 .mbuttonA.mClicked .region *{
@@ -355,19 +354,30 @@ visibility: visible;
 
 @media (max-width: 950px) {
 
+  .detailsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    position: absolute;
+    padding-top: 20%;
+  }
+
   .box {
     height: fit-content;
   }
 
   .showDetails.active {
     display: flex;
+    justify-content: center;
   }
 
   .showDetails {
     position: relative;
     display: none;
-
-  }
+    transform:none;
+    left: -1%;
+    }
 
   .locationScreen {
     flex-direction: column;

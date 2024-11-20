@@ -258,3 +258,89 @@ margin-bottom: 5rem;
     right: 0;
     top: 0;
 }
+
+@media (max-width: 950px) {
+
+    .wrapper {
+        padding-inline: 0.5rem;
+    }
+
+    .AboutUsPageBody {
+        width: 100vw;
+    }
+
+    .Page-gap {
+        justify-content: space-evenly;
+    } 
+
+    .imgContainerChild {
+        height: 16rem;
+        width: -webkit-fill-available;
+    }
+
+    .imgContainerChild img{
+        width: -webkit-fill-available;
+        height: fit-content;
+    }
+
+    .Page-gap *, .Page-gap > * {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .ourMission, .imgContainer {
+        height: -webkit-fill-available;
+    }
+
+    .ourMission {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .messagebox {
+        border-bottom: 2px solid #fff !important;
+        margin-bottom: 1rem;
+    }
+
+    .ourMission1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contactConta *,.imgContainer ,.ourMission1, .ourMission2, .textContainer,  .ourMission, .loremIpsumDolor, .contactForm, .contactForm * {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+
+    }
+
+    .contactConta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subHeader {
+        margin-bottom: 3rem;
+    }
+
+    .contactForm * {
+        border-inline: none;
+        border-bottom: none;
+    }
+
+    .questions, .contactForm {
+        padding: 0.5rem ;
+    }
+
+    .questions {
+        height: fit-content;
+    }
+
+    .haveQuestions {
+        text-align: start;
+        }
+
+}

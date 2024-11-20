@@ -60,7 +60,6 @@
 
 .overlay {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.75);
     width: 100vw;
     height: 100vh;
     scroll-behavior:none;
@@ -71,5 +70,25 @@
 
 @media (max-width: 950px) {
 
+    .mainimagecontainer {
+        display: none;
+    }
+
+    .imageview {
+        justify-content: start;
+    }
+
+    .previewimgs:first-child {
+        display: none;
+    }
     
+    .previewimgs {
+        flex-direction: column;
+        pointer-events: none;
+    }
+
+    .preview {
+        width: 93vw;
+
+    }
 }
