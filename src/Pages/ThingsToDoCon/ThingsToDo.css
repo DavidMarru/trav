@@ -95,3 +95,12 @@
     display: flex;
     gap: 20px;
 }
+
+@media (max-width: 950px) {
+    .ThingsBackground {
+        width: fit-content;
+        height: 100vh;
+        transform: scalex(-100%);
+    }
+
+}

@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -353,6 +352,17 @@ visibility: visible;
 }
 
 @media (max-width: 950px) {
+
+  html, body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    max-width: 100%;  }
+  
+  * {
+    box-sizing: border-box; /* Ensure padding and borders don't add to element width */
+  }
+  
 
   .detailsContainer {
     display: flex;
