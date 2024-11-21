@@ -31,7 +31,7 @@
     top: 0.5rem;
     border: var(--BorderW);
     border-radius: var(--BorderR);
-    padding: 5px 6px;
+    padding: 5px 6px !important;
     cursor: pointer;
 }
 
@@ -76,6 +76,11 @@
     }
     .surjections *{
         padding: 0;margin: 0;gap: 0;
+        font-size: var(--MediaMFontSize);
+    }
+
+    .text-wrapper{
+        font-size: var(--MediaMFontSize) !important;
     }
 
     .surjections-icons {

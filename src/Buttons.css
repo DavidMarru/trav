@@ -29,3 +29,11 @@
 .full-button:hover .text-wrapper-B {
     color: #ffffff;
 }
+
+
+@media (max-width: 950px) {
+    .full-button {
+        margin-inline: auto;
+        margin-bottom: 1.5rem;
+    }
+}

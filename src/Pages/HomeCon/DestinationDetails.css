@@ -4,7 +4,7 @@
     align-content: center;
     align-self: center;
     height: 381px;
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(0, 0, 0, 0.70);
     border-radius: 5px;
     border: 2px solid #ffffff;
     color: white;
@@ -155,13 +155,18 @@
     letter-spacing: 2.55px;
   }
   
-  .separator {
+  .separator, .separator2 {
     width: 4px;
     height: 4px;
     background: #D9D9D9;
     border-radius: 50%;
     margin: auto 0.5rem;
   }
+
+  .separator2 {
+    display: none;
+  }
+
   .stay-info-aline {
     display: flex;
     height: fit-content;
@@ -268,7 +273,7 @@
       top: 10%;
       right: 0.5px;
       scroll-behavior: smooth;
-      overflow-y: visible;
+      overflow: hidden;
       padding: 20px 10px;
     }
     
@@ -286,13 +291,29 @@
       display: none;
     }
 
+    .destination-name {
+      font-size: var(--MediaLFontSize) !important;
+    }
+
+    .separator2 {
+      display: block;
+    }
+
+    .details-info * {
+      font-size: var(--MediaMFontSize);
+    }
+
     .sideimg {
       width: 165px;
       aspect-ratio: 9 / 9;
       object-fit: contain;
     }    
     .mainimg{
-      height: 50vw;
+      height: 46vw;
+    }
+
+    .stay-info {
+      justify-content: start;
     }
 
     .stay-date, .stay-nights {
@@ -301,22 +322,27 @@
 
     }
 
-    .stayData * {
-      font-size: 4vw;
+    .stayData {
+      flex-direction: column;
+    }
+
+    .amenities {
+      margin-top: 0;
     }
 
     .LpriceHolder {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-self: start;
+      gap: 0.2rem;
+      margin: 10px 0;
     }
 
     .LpriceHolder p {
-      font-size: 4vw;
+      font-size: var(--MediaMFontSize);
     font-weight: 400;
     letter-spacing: 2.55px;
-    text-align: center;
+    text-align: s;
     }
   
   }

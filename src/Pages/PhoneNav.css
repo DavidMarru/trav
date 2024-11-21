@@ -22,7 +22,7 @@
   
   .burger-bar {
     width: 100%;
-    height: 4px;
+    height: 0.15rem;
     background-color: #ffffff;
     transition: 0.3s;
     z-index: 1000;
@@ -41,7 +41,7 @@
   .burger-icon.open .burger-bar:nth-child(3) {
     transform: rotate(-45deg);
     position: relative;
-    top: -8px;
+    top: -10px;
   }
   
   /* The side navigation menu */

@@ -35,8 +35,8 @@ function PhoneNav() {
             <Link to="/HolidayRentals">HOLIDAY RENTALS</Link>
             <p>|</p>
             <Link to="/aboutus">ABOUT US</Link>
-            <p>|</p>
-            <Link to="/TestPage">Test Page</Link>
+            {/* <p>|</p>
+            <Link to="/TestPage">Test Page</Link> */}
           </li>
         </ul>
       </div>

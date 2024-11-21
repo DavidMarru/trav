@@ -76,13 +76,13 @@ const DestinationDetails = ({
             <div className="stayData">
               <div className="stay-info">
                 <div className="stay-info-aline">
-                  <span className="stay-date">Feb 7th 2024</span>
+                  <span className="stay-date">2/7/2024</span>
                   <span className="separator"></span>
                   <span className="stay-nights">nights {nights} </span>
                 </div>
               </div>
               <div className="LpriceHolder">
-                <p>Lowest price</p>
+                <p>Lowest price</p> <span className="separator2"></span>
                 <p className="lowest-price">{lowestPrice}</p>
               </div>
             </div>

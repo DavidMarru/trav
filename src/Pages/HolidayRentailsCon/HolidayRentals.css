@@ -152,7 +152,7 @@
     }
     .PhoneSummeryText {
         display:inline-block;
-        text-align: center;
+        font-size: var(--MediaMFontSize);
     }
 
     .frameParent {
@@ -175,5 +175,10 @@
 
     .summery {
         padding: 1rem 0;
+        height: 10rem;
+    }
+
+    .offRoads {
+        font-size: var(--MediaMFontSize);
     }
 }

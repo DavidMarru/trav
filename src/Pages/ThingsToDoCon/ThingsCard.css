@@ -150,6 +150,7 @@
 
     .location-text , .location-img{
         width: 100%;
+        gap: 3rem;
     }
 
     .location-img {
