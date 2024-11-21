@@ -393,7 +393,7 @@ visibility: visible;
     flex-direction: column;
   }
 
-  .wrapper {
+  .wrapper, .wrapper2 {
     padding-inline: 0;
   }
 

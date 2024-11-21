@@ -103,4 +103,29 @@
         transform: scalex(-100%);
     }
 
+    .ToDO-Row {
+        gap: 2rem;
+    }
+
+    .ToDoReview {
+        height: 30rem;
+        align-self: center;
+    }
+
+    .ThingsToDoCards {  
+        top: -21rem;
+    }
+    .ThingsToDoCards-contain {
+        MAX-WIDTH: 100vw;
+        padding: 25rem 1.5rem 2.5rem;
+        gap: 3rem;
+    }
+
+    #lines {
+    }
+
+    .ThingsToDoCards-topbox {
+        position: relative;
+        top: 19.25rem;
+    }
 }

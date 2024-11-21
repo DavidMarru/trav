@@ -136,3 +136,23 @@
     line-height: normal;
     position: relative;
 }
+
+@media (max-width: 950px) {
+    .ToDO-Row  {
+        flex-direction: column !important;
+    }
+
+    .things-to-do-cards {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .location-text , .location-img{
+        width: 100%;
+    }
+
+    .location-img {
+        margin-top: 4rem;
+    }
+}

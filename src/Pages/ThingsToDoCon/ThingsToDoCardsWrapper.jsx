@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Surjections from './Surjections';
+import PhoneNav from "../PhoneNav";
+
 import ToDoCards from './ThingsToDoCards';
 
 function ThingsToDoCardsWrapper() {
@@ -48,10 +50,12 @@ function ThingsToDoCardsWrapper() {
 
   return (
     <div className="ThingsToDoCards">
+            <PhoneNav />
+
       <div className="ThingsToDoCards-topbox">
-        <div className="ThingsToDoLine1" />
+        <div className="ThingsToDoLine1" id="lines" />
         <Surjections selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} />
-        <div className="ThingsToDoLine2" />
+        <div className="ThingsToDoLine2" id="lines" />
       </div>
 
       <div className="ThingsToDoCards-contain">

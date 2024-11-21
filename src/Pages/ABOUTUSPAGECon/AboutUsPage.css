@@ -294,7 +294,7 @@ margin-bottom: 5rem;
     }
 
     .ourMission {
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
         display: flex;
         flex-direction: column-reverse;
         gap: 2rem;
@@ -305,6 +305,10 @@ margin-bottom: 5rem;
         margin-bottom: 1rem;
     }
 
+    .fullbutton { 
+        top: 1rem;
+    }
+
     .ourMission1 {
         display: flex;
         flex-direction: column;
@@ -313,13 +317,21 @@ margin-bottom: 5rem;
 
     .contactConta *,.imgContainer ,.ourMission1, .ourMission2, .textContainer,  .ourMission, .loremIpsumDolor, .contactForm, .contactForm * {
         width: -webkit-fill-available;
-        height: -webkit-fill-available;
+    }
 
+    .loremIpsumDolor {
+        height: -webkit-fill-available;
+    }
+  
+    .textContainer {
+        height: auto;
     }
 
     .contactConta {
         display: flex;
         flex-direction: column;
+        overflow: visible;
+        height: 46rem ;
     }
 
     .subHeader {

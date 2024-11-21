@@ -139,7 +139,7 @@
 }
 
 .textLink {
-    color: coral;
+    color: rgb(162, 162, 162);
 }
 
 @media (max-width: 950px) {
