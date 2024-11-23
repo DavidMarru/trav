@@ -1,0 +1,146 @@
+.card {
+    width: 25rem;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .card-content {
+    padding: 1rem;
+    margin-top: 29%;
+  }
+
+  
+  .destination {
+    font-size: 3.5vw;
+    letter-spacing: var(--letterspacer);
+    margin-bottom: 0.5rem;
+    color: var(--mainColour);
+  }
+  
+  .country {
+    font-size: var(--mFontSizeCountry);
+    color: #000000;
+    margin-bottom: 2rem;
+    color: var(--mainColour);
+    font-weight: normal;
+    letter-spacing: var(--letterspacerM);
+  }
+  
+
+  .details {
+    padding-bottom: 0.25rem;
+    padding-left: 0.3rem;
+    margin-right: 2rem;
+    border-bottom: 0.15rem solid white;
+    border-left: 0.15rem solid white;
+    border-bottom-left-radius: 0.8rem;
+    border-top: none;
+    border-right: none;
+    font-size: var(--mFontSize);
+    background: none;
+    color: var(--mainColour);
+    letter-spacing: var(--letterspacerM);
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+
+  }
+
+  .details:hover {
+    border-bottom: 2px var(--hightColour1) solid;
+    border-left: 2px var(--hightColour1) solid;
+    color: var(--hightColour1);
+
+  }
+
+  .book-now {
+    background-color: #6e7fef8a;
+    color: white;
+    border: none;
+    padding: 0.2rem 0.6rem;
+    font-size: var(--mFontSize);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    letter-spacing: var(--letterspacerM);
+
+  }
+  
+  .book-now:hover {
+    background-color: var(--hightColourButton);
+  }
+  
+  @media (max-width: 950px) {
+    .card {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: auto;
+    }
+
+    .card-content {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .locationScreen {
+      flex-direction: column;
+    }
+
+    .destination {
+      font-size: var(--MediaLFontSize);
+    }
+
+    .country {
+      font-size: var(--MediaMFontSize);
+      margin-bottom:20rem ;
+    }
+
+    .details:hover {
+      border-left: 0 ;
+      border-top: 0.15rem solid var(--hightColour1) ;
+
+    }
+      .details {
+      font-size: var(--MediaMFontSize);
+      border-left: 0 ;
+      border-radius: 0;
+      border-top: 0.15rem solid white ;
+      margin: 0;
+      width: 100%;
+      align-self: center;
+    }
+
+    .book-now:hover {
+      background: none;
+
+    }
+
+    .mbuttonA.mClicked {
+      display: flex;
+      justify-content: start !important;
+    }
+    .book-now {
+      font-size: var(--MediaMFontSize);
+      width: 100%;
+      align-self: center;
+      background: none;
+      border-bottom:  0.15rem solid white ;
+    }
+  
+    .moreButton {
+      font-size: var(--MediaMFontSize);
+      width: fit-content;
+      height: fit-content;
+    }
+    .mbuttonA {
+      position: relative;
+      display: flex;
+      height: fit-content;
+      top: -289px;
+    }
+
+    .arrowWrapper {
+      display: none;
+    }
+  }

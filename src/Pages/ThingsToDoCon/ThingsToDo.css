@@ -1,0 +1,131 @@
+.ToDO-Footer {
+    margin-top: 5rem;
+}
+
+
+.ThingsToDoBody {
+    position: relative;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 6;
+}
+
+.ThingsToDo-Background {
+    position: fixed;
+    top: 0;
+    z-index: -5 ;
+}
+
+.overLayer {
+    background-color: rgba(0, 0, 0, 0.597);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -3;
+
+}
+.ThingsBackground {
+    position: absolute;
+    width: 100vw;
+    z-index: -4;
+    filter: blur(3px);
+}
+
+.THINGS-TO-DO-PAGE{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.ThingsToDoCards {
+    position: relative;
+}
+
+.ThingsToDoCards-topbox {
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.ThingsToDoCards-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: 0.15rem solid #ffffff;
+    border-left: 0.15rem solid #ffffff;
+    border-right: 0.15rem solid #ffffff;
+    border-radius: 0.15rem;
+    padding:8rem 2.5rem ;
+
+}
+
+.ToDoReview {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.ThingsToDoLine1 {
+    align-self: center;
+    border-radius: 5rem 0px 0px 0px;
+    border-top: 0.15rem solid #ffffff;
+    flex: 1;
+    width: 100%;
+}
+
+.ThingsToDoLine2 {
+    align-self: center;
+    border-radius: 0rem 5rem 0px 0px;
+    border-top: 0.15rem solid #ffffff;
+    flex: 1;
+    width: 80%;
+}
+
+.ToDoImg {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 950px) {
+    .ThingsBackground {
+        width: fit-content;
+        height: 100vh;
+        transform: scalex(-100%);
+    }
+
+    .ToDO-Row {
+        gap: 2rem;
+    }
+
+    .ToDoReview {
+        height: 30rem;
+        align-self: center;
+    }
+
+    .ThingsToDoCards {  
+        top: -21rem;
+    }
+    .ThingsToDoCards-contain {
+        MAX-WIDTH: 100vw;
+        padding: 25rem 1.5rem 2.5rem;
+        gap: 3rem;
+    }
+
+    #lines {
+    }
+
+    .ThingsToDoCards-topbox {
+        position: relative;
+        top: 19.25rem;
+    }
+}

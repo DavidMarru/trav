@@ -1,0 +1,159 @@
+.things-to-do-cards {
+    display: flex;
+    justify-content: center;align-content: center;
+    position: relative;
+    border: 0.15rem solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 4px 17px 25px #00000073;
+    height: 28rem;
+    width: 70%;
+    overflow: hidden;
+}
+
+ .overlap-group {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.ToDoImgLeft {
+    z-index: -6;
+}
+
+.ToDO-Row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.ToDO-Row.Right {
+ flex-direction: row-reverse;   
+}
+
+.ToDoBg-Img-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.ToDoBg-Img-cont img {
+    width: 100%;
+    z-index: 1;
+}
+
+ .ToDoBg {
+}
+
+.things-to-do-cards .div {
+    background-color: #02020261;
+    height: 487px;
+}
+
+.location-img {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 50%;
+}
+
+.default-kruger {
+    width: 100%;
+    object-fit: contain;
+    height: fit-content;
+    align-self: center;
+    border-radius: var(--BorderR);
+}
+
+.location-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 1rem;
+    width: 50%;
+}
+
+.text-wrapper {
+    color: #ffffff;
+    font-family: "Outfit-Regular", Helvetica;
+    font-size: var(--mFontSize);
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    line-height: normal;
+    position: relative;
+}
+
+.full-button-instance {
+    background-color: unset !important;
+    border: 0.15rem solid #ffffff;
+    height: 26px !important;
+    width: 267px !important;
+}
+
+.design-component-instance-node {
+    left: 65px !important;
+    text-align: center !important;
+    top: 1px !important;
+}
+
+.location {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 37px;
+    left: 21px;
+    padding: 1px 17px;
+    position: absolute;
+    top: 1rem;
+    width: 267px;
+    gap: 0.25rem;
+}
+
+.text-wrapper-2 {
+    align-self: stretch;
+    color: #ffffff;
+    font-family: "Outfit-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2.25px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}
+
+.text-wrapper-3 {
+    align-self: stretch;
+    color: #e3e3e3;
+    font-family: "Outfit-Regular", Helvetica;
+    letter-spacing: 1.5px;
+    line-height: normal;
+    position: relative;
+}
+
+@media (max-width: 950px) {
+    .ToDO-Row  {
+        flex-direction: column !important;
+    }
+
+    .things-to-do-cards {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .location-text , .location-img{
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .location-img {
+        margin-top: 4rem;
+    }
+}

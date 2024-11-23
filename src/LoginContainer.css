@@ -1,0 +1,213 @@
+.login-overlay {
+    width: 100vw;
+    height: 100vh;
+    display: flex;justify-content: center;align-content: center;
+    background-color: #000000c9;
+    padding: 2rem 0;
+
+}
+
+.login-component {
+    width: 32rem;
+    position: relative;
+    z-index: 1000;
+    align-self: center;
+    border-radius: var(--BorderR);
+    background-color: rgba(49, 49, 49, 0.78);
+    border: var(--BorderW);
+    box-sizing: border-box;
+    height: 45rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 15.04px;
+    color: #fff;
+    font-family: Inter;
+}
+
+.sign-up {
+    position: relative;
+    letter-spacing: 0.15em;
+}
+
+.sign-up-wrapper {
+    margin: 0 !important;
+    position: absolute;
+    top: 18px;
+    left: 383px;
+    border-radius: var(--BorderR);
+    background-color: rgba(49, 49, 49, 0.78);
+    border: var( --BorderW);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 6px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.one-step-closer {
+    letter-spacing: 0.15em;
+    flex-wrap: nowrap;
+    width:max-content;
+
+}
+
+.one-step-closer-to-your-next-t-wrapper {
+    border-radius: 15px;
+    height: fit-content;
+    color: #d9d9d9;
+    width: fit-content;
+    padding: 0.4rem;
+    align-self: start;
+}
+
+.sign-in-wrapper {
+    width: 180px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #d9d9d9;
+}
+
+
+.email-wrapper {
+    width: 67px;
+    background-color: rgba(49, 49, 49, 0.78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+.email-text-input {
+    align-self: stretch;
+    border-radius: var(--BorderR);
+    background-color: rgba(49, 49, 49, 0.78);
+    border: var(--BorderW);
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.25rem;
+    color: white;
+
+}
+
+.frame-group {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.password-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+}
+
+.toggle-tick-box {
+    width: 14px;
+    position: relative;
+    background-color: #fff;
+    height: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.remember-me-group {
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.forgot-password-button, .Take-me-back-Button{
+    position: relative;
+    text-decoration: underline;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+}
+
+.Take-me-back-Button {
+    margin-top: 2rem;
+}
+
+.rm-fp {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3px;
+}
+
+.login {
+    position: absolute;
+    top: calc(50% - 9.5px);
+    left: calc(50% - 24px);
+    letter-spacing: 0.15em;
+}
+
+.Login-Button {
+    align-self: stretch;
+    position: relative;
+    border-radius: var(--BorderR);
+    background-color: #fff;
+    height: 55px;
+    color: #000;
+    cursor: pointer;
+}
+
+.icon {
+    width: 50px;
+    position: relative;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.login-options {
+    align-self: stretch;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 6px;
+    gap: 15px;
+}
+
+.frame-parent {
+    width: 394px;
+    border-radius: 15px;
+    height: 526px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    z-index: 1;
+    text-align: center;
+}

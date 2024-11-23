@@ -1,0 +1,20 @@
+:root {
+    --font-family1: ;
+    --mainColour: white;
+    --BorderW: 0.15rem solid white;
+    --BorderR: 5px ;
+    
+    --TransBG: #00000079;
+    --hightColour1: #FFFD54;
+    --hightColourButton: #fffc54c9;
+    --mFontSize: 0.94rem;
+    --mFontSize2: 1.06rem;
+    --mFontSizeCountry: 1.41rem;
+    --letterspacerL: 0.5rem;
+    --letterspacerM: 0.23rem;
+
+    --MediaMFontSize:0.8rem;
+    --MediaLFontSize:1.5rem;
+    
+
+}

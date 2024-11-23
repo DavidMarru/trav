@@ -1,0 +1,80 @@
+/* .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior:none;
+}
+
+.preview3 {
+    position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% + 202px);
+    width: 338px;
+    height: 188px;
+    object-fit: cover;
+}
+.preview4 {
+    position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% + 202px);
+    width: 338px;
+    height: 188px;
+    object-fit: cover;
+}
+.preview2 {
+    position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% - 169px);
+    width: 338px;
+    height: 188px;
+    object-fit: cover;
+}
+.preview1 {
+    position: absolute;
+    top: calc(50% - 94px);
+    left: calc(50% - 540px);
+    width: 338px;
+    height: 188px;
+    object-fit: cover;
+}
+.previewimgs {
+    position: absolute;
+    top: 59%;
+    left: 15%;
+    width: 1080px;
+    height: 188px;
+}
+
+.previewimgs *:hover {
+    border-color: var(--hightColour1); /* Highlight on hover */
+  /* }
+
+.previewimgs *{
+    border: var(--BorderW);
+    border-radius: var(--BorderR);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+.mainImageWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+}
+.mainimagecontainer {
+    position: absolute;
+    top: calc(50% - 390.5px);
+    left: 30%;
+    width: 43%;
+    object-fit: cover;
+    border: var(--BorderW);
+    border-radius: var(--BorderR);
+}
+.imageview {
+    width: 100%;
+    position: relative;
+    height: 837px;
+}
+ */

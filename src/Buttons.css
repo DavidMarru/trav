@@ -1,0 +1,39 @@
+.full-button {
+    border-radius: 5px;
+    position: relative;
+    width: 12rem;
+    border: 0.15rem solid #ffffff93;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;align-content: center;text-align: center;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+.full-button .text-wrapper-B {
+    color: #ffffff93;
+    font-family: "Outfit-Regular", Helvetica;
+    font-size: var(--mFontSize);
+    letter-spacing: var(--letterspacerM);
+    transition: 0.3s all ease-in-out;
+
+}
+
+
+.full-button:hover {
+    border-color: #ffffff;
+}
+
+.full-button:hover .text-wrapper-B {
+    color: #ffffff;
+}
+
+
+@media (max-width: 950px) {
+    .full-button {
+        margin-inline: auto;
+        margin-bottom: 1.5rem;
+    }
+}
